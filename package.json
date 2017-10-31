@@ -39,7 +39,10 @@
   "keywords": [
     "npm-package-template"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "WiredPanels": "^1.1.0",
+    "package-json": "^4.0.1"
+  },
   "contributors": [
     {
       "name": "Markus Felten",
