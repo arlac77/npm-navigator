@@ -34,11 +34,10 @@
     "node": ">=8.8.1"
   },
   "version": "0.0.0-semantic-release",
-  "description": "{{description}}",
+  "description": "navigate npm dependencies",
   "main": "dist/index.js",
-  "keywords": [
-    "npm-package-template"
-  ],
+  "module": "src/index.js",
+  "keywords": [],
   "dependencies": {
     "WiredPanels": "^1.1.0",
     "package-json": "^4.0.1"
