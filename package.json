@@ -11,28 +11,19 @@
   "scripts": {
     "start": "webpack --config webpack.config.js",
     "cover": "nyc ava",
-    "precover": "rollup -c tests/rollup.config.js",
     "test": "ava",
-    "pretest": "rollup -c tests/rollup.config.js",
-    "posttest": "npm run prepare && markdown-doctest",
-    "prepare": "rollup -c",
-    "docs":
-      "jsdoc2md --configure doc/jsdoc.json -l off -t doc/README.hbs -f src/*.js >README.md",
+    "posttest": "npm run prepare",
     "semantic-release": "semantic-release"
   },
   "devDependencies": {
     "ava": "^0.23.0",
-    "jsdoc-babel": "^0.3.0",
-    "jsdoc-to-markdown": "^3.0.0",
-    "markdown-doctest": "^0.9.1",
     "nyc": "^11.3.0",
-    "rollup": "^0.50.0",
     "semantic-release": "^9.1.0",
     "webpack": "^3.8.1",
     "xo": "^0.19.0"
   },
   "engines": {
-    "node": ">=8.8.1"
+    "node": ">=8.9.1"
   },
   "version": "0.0.0-semantic-release",
   "description": "navigate npm dependencies",
@@ -40,7 +31,7 @@
   "module": "src/index.js",
   "keywords": [],
   "dependencies": {
-    "WiredPanels": "^1.1.0",
+    "WiredPanels": "^1.1.1",
     "package-json": "^4.0.1"
   },
   "contributors": [
@@ -54,13 +45,23 @@
     "space": true
   },
   "ava": {
-    "files": ["build/*-test.js"],
-    "presets": ["env"],
-    "require": ["babel-register"]
+    "files": [
+      "build/*-test.js"
+    ],
+    "presets": [
+      "env"
+    ],
+    "require": [
+      "babel-register"
+    ]
   },
   "nyc": {
-    "include": ["build/*-test.js"],
-    "reporter": ["lcov"],
+    "include": [
+      "build/*-test.js"
+    ],
+    "reporter": [
+      "lcov"
+    ],
     "report-dir": "./build/coverage"
   },
   "template": {
