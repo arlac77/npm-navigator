@@ -6,16 +6,16 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
 
-    filename: 'bundle.js', // string
+    filename: 'bundle.js',
     // the filename template for entry chunks
 
-    publicPath: '/assets/', // string
+    publicPath: '/assets/',
     // the url to the output directory resolved relative to the HTML page
 
-    library: 'MyLibrary', // string,
+    library: 'MyLibrary',
     // the name of the exported library
 
-    libraryTarget: 'umd' // universal module definition
+    libraryTarget: 'umd'
     // the type of the exported library
   },
 
@@ -68,7 +68,6 @@ module.exports = {
     // directories where to look for modules
 
     extensions: ['.js', '.json', '.jsx', '.css'],
-    // extensions that are used
 
     alias: {
       // a list of module name aliases
@@ -83,9 +82,6 @@ module.exports = {
       // alias "module" -> "./app/third/module.js" and "module/file" results in error
       // modules aliases are imported relative to the current context
     }
-    /* alternative alias syntax (click to show) */
-
-    /* Advanced resolve configuration (click to show) */
   },
 
   performance: {
@@ -128,7 +124,6 @@ module.exports = {
     hot: true, // hot module replacement. Depends on HotModuleReplacementPlugin
     https: false, // true for self-signed, object for cert authority
     noInfo: true // only errors & warns on hot reload
-    // ...
   },
 
   plugins: []
