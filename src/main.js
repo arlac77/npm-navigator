@@ -30,7 +30,9 @@ wiredPanels.svg.ondblclick = async function(event) {
   panel.y = mousePos[1];
 };
 
-function addModule(module, version = 'latest') {
+async function addModule(module, version = 'latest', depth = 1) {
+  version = version.replace(/^\^/, '');
+
   const t = module['dist-tags'][version];
   const latest = (t && module.versions[t]) || module.versions[version];
 
@@ -45,22 +47,30 @@ function addModule(module, version = 'latest') {
   socket.orientation = 'top';
   sockets.push(socket);
 
-  Object.keys(latest.dependencies).forEach(d => {
-    const socket = wiredPanels.createSocket();
-    socket.panel = panel;
-    socket.orientation = 'left';
-    socket.label.textContent = `${d}@${latest.dependencies[d]}`;
-    sockets.push(socket);
-  });
+  if (latest && latest.dependencies !== undefined) {
+    Object.keys(latest.dependencies).forEach(async d => {
+      const socket = wiredPanels.createSocket();
+      socket.panel = panel;
+      socket.orientation = 'left';
+      socket.label.textContent = `${d}@${latest.dependencies[d]}`;
+      sockets.push(socket);
+
+      if (depth > 0) {
+        const v = latest.dependencies[d];
+        const p = await loadModule(d, v, depth - 1);
+        //    socket.
+      }
+    });
+  }
 
   wiredPanels.changeGraphUndoable(new Set([panel, ...sockets]), []);
 
   return panel;
 }
 
-export async function loadModule(id, version) {
+async function loadModule(id, version, depth) {
   const result = await fetch(`https://registry.npmjs.org/${id}`);
-  return addModule(await result.json(), version);
+  return addModule(await result.json(), version, depth);
 }
 
-loadModule('config-expander');
+loadModule('config-expander', 'latest', 3);

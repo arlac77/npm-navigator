@@ -31,7 +31,7 @@
   "module": "src/index.js",
   "keywords": [],
   "dependencies": {
-    "WiredPanels": "^1.1.1",
+    "WiredPanels": "^1.1.2",
     "package-json": "^4.0.1"
   },
   "contributors": [
@@ -45,13 +45,23 @@
     "space": true
   },
   "ava": {
-    "files": ["build/*-test.js"],
-    "presets": ["env"],
-    "require": ["babel-register"]
+    "files": [
+      "build/*-test.js"
+    ],
+    "presets": [
+      "env"
+    ],
+    "require": [
+      "babel-register"
+    ]
   },
   "nyc": {
-    "include": ["build/*-test.js"],
-    "reporter": ["lcov"],
+    "include": [
+      "build/*-test.js"
+    ],
+    "reporter": [
+      "lcov"
+    ],
     "report-dir": "./build/coverage"
   },
   "template": {
