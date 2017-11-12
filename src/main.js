@@ -1,52 +1,5 @@
 import WiredPanels from '../node_modules/WiredPanels/WiredPanels.js';
 
-function addPanel(nodesToAdd, symbol) {
-  if (panelIndex.has(symbol)) return panelIndex.get(symbol);
-
-  const panel = wiredPanels.createPanel();
-  panel.symbol = symbol;
-  nodesToAdd.add(panel);
-
-  const sockets = [];
-  const topSocket = wiredPanels.createSocket();
-  topSocket.panel = panel;
-  topSocket.orientation = 'top';
-  setSocketVisibility(topSocket, panel.symbol);
-  nodesToAdd.add(topSocket);
-
-  function connectWires(triple, side) {
-    if (!panelIndex.has(triple[0])) return;
-    const sockets = panelIndex.get(triple[0])[side];
-    for (const socket of sockets)
-      if (socket.symbol == symbol) {
-        const wire = wiredPanels.createWire();
-        wire.srcSocket = topSocket;
-        wire.dstSocket = socket;
-        nodesToAdd.add(wire);
-      }
-  }
-  for (const triple of backend.queryTriples(
-    symbolSpace,
-    NativeBackend.queryMask.VMI,
-    [0, panel.symbol, 0]
-  ))
-    connectWires(triple, 'leftSockets');
-  for (const triple of backend.queryTriples(
-    symbolSpace,
-    NativeBackend.queryMask.VIM,
-    [0, 0, panel.symbol]
-  ))
-    connectWires(triple, 'rightSockets');
-  for (const triple of backend.queryTriples(
-    symbolSpace,
-    NativeBackend.queryMask.MVV,
-    [panel.symbol, 0, 0]
-  ))
-    linkedTriple(nodesToAdd, triple, panel);
-
-  return panel;
-}
-
 const wiredPanels = new WiredPanels(
   document.getElementById('graph'),
   {},
@@ -88,17 +41,17 @@ const wiredPanels = new WiredPanels(
               nextEncoding[0],
               nextEncoding[1]
             );
-            if (prevEncoding[2] != nextEncoding[2]) {
-              if (prevEncoding[2] != undefined)
+            if (prevEncoding[2] !== nextEncoding[2]) {
+              if (prevEncoding[2] !== undefined)
                 unlinkedTriple(nodesToRemove, prevEncoding);
-              if (nextEncoding[2] != undefined)
+              if (nextEncoding[2] !== undefined)
                 linkedTriple(nodesToAdd, nextEncoding);
             }
           }
         } else if (node.type === 'socket') {
           if (
             node.orientation != 'top' &&
-            node.wiresPerPanel.size == 0 &&
+            node.wiresPerPanel.size === 0 &&
             node.symbol != undefined
           )
             panels.add(addPanel(nodesToAdd, node.symbol));
@@ -186,7 +139,7 @@ const wiredPanels = new WiredPanels(
       };
     },
     wireDrag(socket) {
-      return socket.orientation == 'top';
+      return socket.orientation === 'top';
     },
     wireConnect(node, wire, nodesToAdd) {
       if (node.type === 'panel') {
@@ -221,17 +174,14 @@ const wiredPanels = new WiredPanels(
   }
 );
 
-wiredPanels.svg.ondblclick = function(event) {
-  const mousePos = wiredPanels.mousePositionOfEvent(event),
-    nodesToAdd = new Set(),
-    panel = addPanel(nodesToAdd, backend.createSymbol(symbolSpace));
+wiredPanels.svg.ondblclick = async function(event) {
+  const mousePos = wiredPanels.mousePositionOfEvent(event);
+
+  const id = 'expression-expander';
+  const result = await fetch(`https://registry.npmjs.org/${id}`);
+  const panel = addModule(await result.json());
   panel.x = mousePos[0];
   panel.y = mousePos[1];
-  wiredPanels.changeGraphUndoable(nodesToAdd, [], function(forward) {
-    if (forward) backend.createSymbol(symbolSpace, panel.symbol);
-    else backend.unlinkSymbol(symbolSpace, panel.symbol);
-    setPanelVisibility(panel, forward);
-  });
 };
 
 function addModule(module) {
@@ -244,7 +194,10 @@ function addModule(module) {
   panel.y = 100;
   panel.label.textContent = module.name;
 
-  console.log(module);
+  const socket = wiredPanels.createSocket();
+  socket.panel = panel;
+  socket.orientation = 'top';
+  sockets.push(socket);
 
   Object.keys(latest.dependencies).forEach(d => {
     const socket = wiredPanels.createSocket();
@@ -254,15 +207,6 @@ function addModule(module) {
     sockets.push(socket);
   });
 
-  /*
-  for (let i = 0; i < 3; ++i) {
-    const socket = wiredPanels.createSocket();
-    socket.panel = panel;
-    socket.orientation = ['top', 'left', 'right', 'bottom'][i % 4];
-    socket.label.textContent = socket.orientation + ' ' + i;
-    sockets.push(socket);
-  }
-  */
   wiredPanels.changeGraphUndoable(new Set([panel, ...sockets]), []);
 
   return panel;
@@ -272,8 +216,6 @@ export async function initialize() {
   const id = 'config-expander';
   const result = await fetch(`https://registry.npmjs.org/${id}`);
   const json = await result.json();
-
-  //console.log(json);
 
   addModule(json);
 }
