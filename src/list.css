@@ -1,0 +1,28 @@
+li > ul {
+    margin-left: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    transition: height 0.25s linear;
+}
+
+li > span:first-child:before {
+    content: "▶";
+    margin-left: 2px;
+    margin-right: 4px;
+    display: inline-block;
+    font-size: 75%;
+    transition: transform 0.25s linear;
+}
+
+li.open > span:first-child:before {
+    transform: rotate(90deg);
+}
+
+li:not(.open) > ul {
+    height: 0;
+}
