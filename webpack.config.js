@@ -1,22 +1,14 @@
 const path = require('path');
 
 module.exports = {
-  entry: './app/entry',
+  entry: './src/index.js',
 
   output: {
     path: path.resolve(__dirname, 'dist'),
-
     filename: 'bundle.js',
-    // the filename template for entry chunks
-
     publicPath: '/assets/',
-    // the url to the output directory resolved relative to the HTML page
-
-    library: 'MyLibrary',
-    // the name of the exported library
-
+    library: 'Navigator',
     libraryTarget: 'umd'
-    // the type of the exported library
   },
 
   module: {
@@ -38,7 +30,7 @@ module.exports = {
         // see webpack 1 upgrade guide
 
         options: {
-          presets: ['es2015']
+          presets: ['env']
         }
         // options for the loader
       },
