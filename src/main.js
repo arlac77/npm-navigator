@@ -235,16 +235,35 @@ wiredPanels.svg.ondblclick = function(event) {
 };
 
 function addModule(module) {
-  const panel = wiredPanels.createPanel();
+  const version = module['dist-tags'].latest;
+  const latest = module.versions[version];
 
+  const panel = wiredPanels.createPanel(),
+    sockets = [];
+  panel.x = 100;
+  panel.y = 100;
   panel.label.textContent = module.name;
-  //panel.symbol = module.name;
 
-  const topSocket = wiredPanels.createSocket();
-  topSocket.panel = panel;
-  topSocket.orientation = 'top';
+  console.log(module);
 
-  console.log(panel);
+  Object.keys(latest.dependencies).forEach(d => {
+    const socket = wiredPanels.createSocket();
+    socket.panel = panel;
+    socket.orientation = 'left';
+    socket.label.textContent = d;
+    sockets.push(socket);
+  });
+
+  /*
+  for (let i = 0; i < 3; ++i) {
+    const socket = wiredPanels.createSocket();
+    socket.panel = panel;
+    socket.orientation = ['top', 'left', 'right', 'bottom'][i % 4];
+    socket.label.textContent = socket.orientation + ' ' + i;
+    sockets.push(socket);
+  }
+  */
+  wiredPanels.changeGraphUndoable(new Set([panel, ...sockets]), []);
 
   return panel;
 }
