@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/main.js',
 
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -15,37 +15,32 @@ module.exports = {
     rules: [
       {
         test: /\.jsx?$/,
-        include: [path.resolve(__dirname, 'app')],
-
-        //issuer: { test, include, exclude },
-        // conditions for the issuer (the origin of the import)
-
+        include: [path.resolve(__dirname, 'src')],
         enforce: 'pre',
         enforce: 'post',
-        // flags to apply these rules, even if they are overridden (advanced option)
-
         loader: 'babel-loader',
-        // the loader which should be applied, it'll be resolved relative to the context
-        // -loader suffix is no longer optional in webpack2 for clarity reasons
-        // see webpack 1 upgrade guide
-
         options: {
-          presets: ['env']
+          presets: [
+            [
+              'env',
+              {
+                targets: {
+                  safari: '11.0.2',
+                  modules: true
+                }
+              }
+            ]
+          ]
         }
-        // options for the loader
       },
 
       {
         test: /\.html$/,
-
         use: [
-          // apply multiple loaders and options
           'htmllint-loader',
           {
             loader: 'html-loader',
-            options: {
-              /* ... */
-            }
+            options: {}
           }
         ]
       }
@@ -53,57 +48,15 @@ module.exports = {
   },
 
   resolve: {
-    // options for resolving module requests
-    // (does not apply to resolving to loaders)
-
     modules: ['node_modules', path.resolve(__dirname, 'app')],
-    // directories where to look for modules
-
-    extensions: ['.js', '.json', '.jsx', '.css'],
-
-    alias: {
-      // a list of module name aliases
-
-      module: 'new-module',
-      // alias "module" -> "new-module" and "module/path/file" -> "new-module/path/file"
-
-      'only-module$': 'new-module',
-      // alias "only-module" -> "new-module", but not "only-module/path/file" -> "new-module/path/file"
-
-      module: path.resolve(__dirname, 'app/third/module.js')
-      // alias "module" -> "./app/third/module.js" and "module/file" results in error
-      // modules aliases are imported relative to the current context
-    }
+    extensions: ['.js', '.json', '.jsx', '.css']
   },
 
-  performance: {
-    hints: 'warning', // enum
-    maxAssetSize: 200000, // int (in bytes),
-    maxEntrypointSize: 400000, // int (in bytes)
-    assetFilter: function(assetFilename) {
-      // Function predicate that provides asset filenames
-      return assetFilename.endsWith('.css') || assetFilename.endsWith('.js');
-    }
-  },
-
-  devtool: 'source-map', // enum
-  // enhance debugging by adding meta info for the browser devtools
-  // source-map most detailed at the expense of build speed.
-
-  context: __dirname, // string (absolute path!)
-  // the home directory for webpack
-  // the entry and module.rules.loader option
-  //   is resolved relative to this directory
-
-  target: 'web', // enum
-  // the environment in which the bundle should run
-  // changes chunk loading behavior and available modules
-
-  externals: ['react', /^@angular\//],
-  // Don't follow/bundle these modules, but request them at runtime from the environment
-
+  devtool: 'source-map',
+  context: __dirname,
+  target: 'web',
+  externals: [],
   stats: 'errors-only',
-  // lets you precisely control what bundle information gets displayed
 
   devServer: {
     proxy: {
