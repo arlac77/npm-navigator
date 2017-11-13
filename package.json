@@ -17,11 +17,13 @@
   },
   "devDependencies": {
     "ava": "^0.23.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "html-loader": "^0.5.1",
+    "htmllint-loader": "^2.1.4",
     "nyc": "^11.3.0",
     "semantic-release": "^9.1.1",
     "webpack": "^3.8.1",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.1",
     "xo": "^0.19.0"
   },
   "engines": {
@@ -47,13 +49,23 @@
     "space": true
   },
   "ava": {
-    "files": ["build/*-test.js"],
-    "presets": ["env"],
-    "require": ["babel-register"]
+    "files": [
+      "build/*-test.js"
+    ],
+    "presets": [
+      "env"
+    ],
+    "require": [
+      "babel-register"
+    ]
   },
   "nyc": {
-    "include": ["build/*-test.js"],
-    "reporter": ["lcov"],
+    "include": [
+      "build/*-test.js"
+    ],
+    "reporter": [
+      "lcov"
+    ],
     "report-dir": "./build/coverage"
   },
   "template": {

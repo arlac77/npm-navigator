@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/main.js',
+  entry: './src/index.html',
 
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -14,7 +14,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.js$/,
         include: [path.resolve(__dirname, 'src')],
         enforce: 'pre',
         enforce: 'post',
@@ -33,14 +33,12 @@ module.exports = {
           ]
         }
       },
-
       {
         test: /\.html$/,
         use: [
           'htmllint-loader',
           {
-            loader: 'html-loader',
-            options: {}
+            loader: 'html-loader'
           }
         ]
       }
@@ -57,19 +55,5 @@ module.exports = {
   target: 'web',
   externals: [],
   stats: 'errors-only',
-
-  devServer: {
-    proxy: {
-      // proxy URLs to backend development server
-      '/api': 'http://localhost:3000'
-    },
-    contentBase: path.join(__dirname, 'public'), // boolean | string | array, static file location
-    compress: true, // enable gzip compression
-    historyApiFallback: true, // true for index.html upon 404, object for multiple paths
-    hot: true, // hot module replacement. Depends on HotModuleReplacementPlugin
-    https: false, // true for self-signed, object for cert authority
-    noInfo: true // only errors & warns on hot reload
-  },
-
   plugins: []
 };
