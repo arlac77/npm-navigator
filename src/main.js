@@ -30,6 +30,8 @@ wiredPanels.svg.ondblclick = async function(event) {
   panel.y = mousePos[1];
 };
 
+const allModules = new Map();
+
 async function addModule(module, version = 'latest', depth = 1) {
   version = version.replace(/^\^/, '');
 
@@ -37,9 +39,10 @@ async function addModule(module, version = 'latest', depth = 1) {
   const latest = (t && module.versions[t]) || module.versions[version];
 
   const panel = wiredPanels.createPanel();
+
   const sockets = [];
   const wires = [];
-  panel.x = 100;
+  panel.x = 100 * depth;
   panel.y = 100;
   panel.label.textContent = module.name;
 
@@ -77,8 +80,17 @@ async function addModule(module, version = 'latest', depth = 1) {
 }
 
 async function loadModule(id, version, depth) {
+  const old = allModules.get(id);
+  if (old !== undefined) {
+    return old;
+  }
+
   const result = await fetch(`https://registry.npmjs.org/${id}`);
-  return addModule(await result.json(), version, depth);
+  const module = await addModule(await result.json(), version, depth);
+
+  allModules.set(id, module);
+
+  return module;
 }
 
-loadModule('config-expander', 'latest', 2);
+loadModule('kronos-cluster-node', 'latest', 1);
