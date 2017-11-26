@@ -23,26 +23,26 @@
     "ava": "^0.23.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
-    "html-loader": "^0.5.1",
-    "htmllint-loader": "^2.1.4",
     "nyc": "^11.3.0",
     "semantic-release": "^10.0.1",
-    "webpack": "^3.8.1",
     "xo": "^0.19.0",
     "jsdoc-to-markdown": "^3.0.2",
     "jsdoc-babel": "^0.3.0",
     "markdown-doctest": "^0.9.1",
     "rollup": "^0.52.0",
     "rollup-plugin-babel": "^3.0.2",
-    "rollup-plugin-multi-entry": "^2.0.2"
+    "rollup-plugin-multi-entry": "^2.0.2",
+    "html-loader": "^0.5.1",
+    "htmllint-loader": "^2.1.4",
+    "webpack": "^3.8.1"
   },
   "engines": {
     "node": ">=8.9.1"
   },
   "version": "0.0.0-semantic-release",
   "description": "navigate npm dependencies",
-  "main": "dist/index.js",
-  "module": "src/index.js",
+  "main": "dist/main.js",
+  "module": "src/main.js",
   "keywords": [],
   "dependencies": {
     "WiredPanels": "^1.1.2",
