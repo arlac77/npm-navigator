@@ -10,10 +10,14 @@
   "homepage": "https://github.com/arlac77/npm-navigator#readme",
   "scripts": {
     "start": "webpack --config webpack.config.js",
-    "cover": "nyc ava",
+    "cover": "nyc --temp-directory build/nyc ava",
     "test": "ava",
-    "posttest": "npm run prepare",
-    "semantic-release": "semantic-release"
+    "posttest": "npm run prepare && markdown-doctest",
+    "semantic-release": "semantic-release",
+    "precover": "rollup -c tests/rollup.config.js",
+    "pretest": "rollup -c tests/rollup.config.js",
+    "prepare": "rollup -c",
+    "docs": "jsdoc2md --configure doc/jsdoc.json -l off -t doc/README.hbs -f src/*.js >README.md"
   },
   "devDependencies": {
     "ava": "^0.23.0",
@@ -22,9 +26,15 @@
     "html-loader": "^0.5.1",
     "htmllint-loader": "^2.1.4",
     "nyc": "^11.3.0",
-    "semantic-release": "^9.1.1",
+    "semantic-release": "^10.0.1",
     "webpack": "^3.8.1",
-    "xo": "^0.19.0"
+    "xo": "^0.19.0",
+    "jsdoc-to-markdown": "^3.0.2",
+    "jsdoc-babel": "^0.3.0",
+    "markdown-doctest": "^0.9.1",
+    "rollup": "^0.52.0",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-multi-entry": "^2.0.2"
   },
   "engines": {
     "node": ">=8.9.1"
