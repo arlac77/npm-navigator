@@ -2,6 +2,7 @@ import pkg from './package.json';
 import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import html from 'rollup-plugin-fill-html';
+import css from 'rollup-plugin-css-only';
 
 export default {
   input: pkg.module,
@@ -16,6 +17,7 @@ export default {
       template: 'src/index.html',
       filename: 'index.html',
       inject: 'body'
-    })
+    }),
+    css({ output: 'dist/bundle.css' })
   ]
 };
