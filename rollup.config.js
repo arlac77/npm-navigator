@@ -1,4 +1,5 @@
 import pkg from './package.json';
+import url from 'rollup-plugin-url';
 
 export default {
   input: pkg.module,
@@ -6,5 +7,10 @@ export default {
     file: pkg.main,
     format: 'cjs'
   },
-  plugins: []
+  plugins: [
+    url({
+      //  include: ['**/*.css'],
+      emitFiles: true
+    })
+  ]
 };

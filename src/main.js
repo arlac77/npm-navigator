@@ -82,6 +82,7 @@ async function addModule(module, version = 'latest', depth = 1) {
 async function loadModule(id, version, depth) {
   const old = allModules.get(id);
   if (old !== undefined) {
+    console.log(`reuse: ${id}`);
     return old;
   }
 
