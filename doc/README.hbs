@@ -19,6 +19,7 @@ npm-navigator
 -------------------
 navigate npm dependencies visually
 
+![Screen](doc/screen.png)
 
 # install
 
