@@ -1,4 +1,4 @@
-import WiredPanels from '../node_modules/WiredPanels/WiredPanels.js';
+import WiredPanels from 'WiredPanels';
 
 const wiredPanels = new WiredPanels(
   document.getElementById('graph'),

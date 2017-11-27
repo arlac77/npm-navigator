@@ -1,5 +1,7 @@
 import pkg from './package.json';
-import url from 'rollup-plugin-url';
+import resolve from 'rollup-plugin-node-resolve';
+import commonjs from 'rollup-plugin-commonjs';
+import html from 'rollup-plugin-fill-html';
 
 export default {
   input: pkg.module,
@@ -8,9 +10,12 @@ export default {
     format: 'cjs'
   },
   plugins: [
-    url({
-      //  include: ['**/*.css'],
-      emitFiles: true
+    resolve(),
+    commonjs(),
+    html({
+      template: 'src/index.html',
+      filename: 'index.html',
+      inject: 'body'
     })
   ]
 };
