@@ -1,7 +1,5 @@
 import WiredPanels from 'WiredPanels';
 import './main.css';
-import './list.css';
-
 import 'WiredPanels/WiredPanels.css';
 import 'WiredPanels/Colors/Neon.css';
 
