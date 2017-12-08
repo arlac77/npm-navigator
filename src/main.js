@@ -17,15 +17,13 @@ const wiredPanels = new WiredPanels(
       if (node.type === 'panel') {
       } else {
         wire.dstSocket = node;
-        return function(forward) {
-          wiredPanels.updatePanelGeometry(node.panel);
-        };
+        return forward => wiredPanels.updatePanelGeometry(node.panel);
       }
     }
   }
 );
 
-wiredPanels.svg.ondblclick = async function(event) {
+wiredPanels.svg.ondblclick = async event => {
   const panel = loadModule('expression-expander');
   const mousePos = wiredPanels.mousePositionOfEvent(event);
 
