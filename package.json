@@ -46,7 +46,7 @@
   "module": "src/main.js",
   "keywords": [],
   "dependencies": {
-    "WiredPanels": "^1.1.2"
+    "WiredPanels": "^2.0.0"
   },
   "contributors": [
     {
