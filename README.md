@@ -23,6 +23,8 @@ navigate npm dependencies visually
 
 ![Screen](doc/screen.png)
 
+# API
+
 # install
 
 With [npm](http://npmjs.org) do:
@@ -34,4 +36,3 @@ npm install npm-navigator
 # license
 
 BSD-2-Clause
-
