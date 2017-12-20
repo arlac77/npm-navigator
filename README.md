@@ -1,4 +1,3 @@
-
 [![npm](https://img.shields.io/npm/v/npm-navigator.svg)](https://www.npmjs.com/package/npm-navigator)
 [![Greenkeeper](https://badges.greenkeeper.io/arlac77/npm-navigator.svg)](https://greenkeeper.io/)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/arlac77/npm-navigator)
@@ -16,6 +15,7 @@
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 [![downloads](http://img.shields.io/npm/dm/npm-navigator.svg?style=flat-square)](https://npmjs.org/package/npm-navigator)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 
 npm-navigator
 -------------------
