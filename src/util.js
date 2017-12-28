@@ -1,5 +1,9 @@
 const allModules = new Map();
 
+/**
+ * @param {string} id
+ * @param {string} version
+ */
 export async function loadModule(id, version, depth) {
   const old = allModules.get(id);
   if (old !== undefined) {
