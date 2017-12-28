@@ -1,6 +1,7 @@
 const allModules = new Map();
 
 /**
+ * Load and cache a module
  * @param {string} id
  * @param {string} version
  */
