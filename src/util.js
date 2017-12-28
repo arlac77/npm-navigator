@@ -1,3 +1,6 @@
+/**
+ * module cache
+ */
 const allModules = new Map();
 
 /**
