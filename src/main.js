@@ -1,4 +1,5 @@
 import WiredPanels from 'WiredPanels';
+import { loadModule } from './util';
 import './main.css';
 import 'WiredPanels/WiredPanels.css';
 import 'WiredPanels/Colors/Neon.css';
@@ -30,8 +31,6 @@ wiredPanels.svg.ondblclick = async event => {
   panel.x = mousePos[0];
   panel.y = mousePos[1];
 };
-
-const allModules = new Map();
 
 async function addModule(module, version = 'latest', depth = 1) {
   version = version.replace(/^\^/, '');
@@ -78,21 +77,6 @@ async function addModule(module, version = 'latest', depth = 1) {
   wiredPanels.changeGraphUndoable(new Set([panel, ...sockets, ...wires]), []);
 
   return panel;
-}
-
-async function loadModule(id, version, depth) {
-  const old = allModules.get(id);
-  if (old !== undefined) {
-    console.log(`reuse: ${id}`);
-    return old;
-  }
-
-  const result = await fetch(`https://registry.npmjs.org/${id}`);
-  const module = await addModule(await result.json(), version, depth);
-
-  allModules.set(id, module);
-
-  return module;
 }
 
 loadModule('kronos-cluster-node', 'latest', 1);
