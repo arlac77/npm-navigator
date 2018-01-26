@@ -35,7 +35,7 @@
     "nyc": "^11.4.1",
     "puppeteer": "^1.0.0",
     "rollup": "^0.55.1",
-    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-commonjs": "^8.3.0",
     "rollup-plugin-css-only": "^0.4.0",
     "rollup-plugin-fill-html": "^1.1.0",
     "rollup-plugin-multi-entry": "^2.0.2",
