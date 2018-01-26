@@ -28,7 +28,7 @@
     "WiredPanels": "^2.0.0"
   },
   "devDependencies": {
-    "ava": "^0.24.0",
+    "ava": "^0.25.0",
     "koa": "^2.4.1",
     "koa-static": "^4.0.2",
     "markdown-doctest": "^0.9.1",
