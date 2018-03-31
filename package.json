@@ -21,7 +21,8 @@
     "pretest": "rollup -c tests/rollup.config.js",
     "prepare": "rollup -c",
     "docs": "documentation readme src/main.js --section=API",
-    "lint": "documentation lint src/main.js"
+    "lint": "documentation lint src/main.js",
+    "travis-deploy-once": "travis-deploy-once"
   },
   "dependencies": {
     "WiredPanels": "^2.0.0"
@@ -55,13 +56,23 @@
   },
   "homepage": "https://github.com/arlac77/npm-navigator#readme",
   "ava": {
-    "files": ["build/*-test.js"],
-    "presets": ["env"],
-    "require": ["babel-register"]
+    "files": [
+      "build/*-test.js"
+    ],
+    "presets": [
+      "env"
+    ],
+    "require": [
+      "babel-register"
+    ]
   },
   "nyc": {
-    "include": ["build/*-test.js"],
-    "reporter": ["lcov"],
+    "include": [
+      "build/*-test.js"
+    ],
+    "reporter": [
+      "lcov"
+    ],
     "report-dir": "./build/coverage"
   },
   "xo": {
