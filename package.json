@@ -33,7 +33,7 @@
     "koa": "^2.5.0",
     "koa-static": "^4.0.2",
     "markdown-doctest": "^0.9.1",
-    "nyc": "^11.7.3",
+    "nyc": "^11.8.0",
     "puppeteer": "^1.4.0",
     "rollup": "^0.59.0",
     "rollup-plugin-commonjs": "^9.1.3",
