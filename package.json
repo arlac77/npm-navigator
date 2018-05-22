@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "ava": "^0.25.0",
-    "documentation": "^7.0.0",
+    "documentation": "^6.3.3",
     "koa": "^2.5.0",
     "koa-static": "^4.0.2",
     "markdown-doctest": "^0.9.1",
