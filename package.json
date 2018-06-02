@@ -1,6 +1,9 @@
 {
   "name": "npm-navigator",
   "version": "0.0.0-semantic-release",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "dist/main.js",
   "module": "src/main.js",
   "description": "navigate npm dependencies visually",
