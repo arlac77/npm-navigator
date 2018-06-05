@@ -29,6 +29,7 @@ navigate npm dependencies visually
 
 -   [allModules](#allmodules)
 -   [loadModule](#loadmodule)
+    -   [Parameters](#parameters)
 
 ## allModules
 
@@ -38,8 +39,9 @@ module cache
 
 Load and cache a module
 
-**Parameters**
+### Parameters
 
+-   `wiredPanels`  
 -   `id` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
 -   `version` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
 -   `depth`  
