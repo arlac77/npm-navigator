@@ -1,3 +1,4 @@
+import cleanup from 'rollup-plugin-cleanup';
 import executable from 'rollup-plugin-executable';
 import pkg from './package.json';
 import resolve from 'rollup-plugin-node-resolve';
