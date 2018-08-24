@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "ava": "^1.0.0-beta.7",
-    "documentation": "^8.1.1",
+    "documentation": "^8.1.2",
     "koa": "^2.5.2",
     "koa-static": "^5.0.0",
     "markdown-doctest": "^0.9.1",
@@ -48,7 +48,7 @@
     "rollup-plugin-multi-entry": "^2.0.2",
     "rollup-plugin-node-resolve": "^3.3.0",
     "semantic-release": "^15.9.9",
-    "travis-deploy-once": "^5.0.2"
+    "travis-deploy-once": "^5.0.3"
   },
   "engines": {
     "node": ">=8.11"
