@@ -1,7 +1,7 @@
 language: node_js
 node_js:
   - 10.9.0
-sudo: "false"
+sudo: 'false'
 branches:
   only:
     - master
