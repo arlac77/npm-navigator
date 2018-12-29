@@ -19,12 +19,10 @@
     "cover": "c8 --temp-directory build/coverage ava && c8 report -r lcov --temp-directory build/coverage",
     "test": "ava",
     "posttest": "npm run prepare && markdown-doctest",
-    "semantic-release": "semantic-release",
     "pretest": "rollup -c tests/rollup.config.js",
     "prepare": "rollup -c",
     "docs": "documentation readme src/main.js --section=API",
-    "lint": "documentation lint src/main.js",
-    "travis-deploy-once": "travis-deploy-once"
+    "lint": "documentation lint src/main.js"
   },
   "dependencies": {
     "WiredPanels": "^2.0.0"
@@ -45,7 +43,6 @@
     "rollup-plugin-json": "^3.1.0",
     "rollup-plugin-node-resolve": "^4.0.0",
     "semantic-release": "^15.13.2",
-    "travis-deploy-once": "^5.0.11",
     "c8": "^3.2.1",
     "esm": "^3.0.84"
   },
