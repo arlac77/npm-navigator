@@ -17,19 +17,21 @@
   "license": "BSD-2-Clause",
   "scripts": {
     "cover": "c8 --temp-directory build/coverage ava && c8 report -r lcov --temp-directory build/coverage",
-    "test": "ava",
-    "posttest": "npm run prepare && markdown-doctest",
-    "pretest": "rollup -c tests/rollup.config.js",
-    "prepare": "rollup -c",
     "docs": "documentation readme src/main.js --section=API",
-    "lint": "documentation lint src/main.js"
+    "lint": "documentation lint src/main.js",
+    "posttest": "npm run prepare && markdown-doctest",
+    "prepare": "rollup -c",
+    "pretest": "rollup -c tests/rollup.config.js",
+    "test": "ava"
   },
   "dependencies": {
     "WiredPanels": "^2.0.0"
   },
   "devDependencies": {
     "ava": "^1.0.1",
+    "c8": "^3.2.1",
     "documentation": "^9.1.1",
+    "esm": "^3.0.84",
     "koa": "^2.6.1",
     "koa-static": "^5.0.0",
     "markdown-doctest": "^0.9.1",
@@ -42,9 +44,7 @@
     "rollup-plugin-fill-html": "^1.1.0",
     "rollup-plugin-json": "^3.1.0",
     "rollup-plugin-node-resolve": "^4.0.0",
-    "semantic-release": "^15.13.2",
-    "c8": "^3.2.1",
-    "esm": "^3.0.84"
+    "semantic-release": "^15.13.2"
   },
   "engines": {
     "node": ">=10.15.0"
