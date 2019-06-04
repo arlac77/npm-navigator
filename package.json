@@ -28,7 +28,7 @@
     "WiredPanels": "^2.0.0"
   },
   "devDependencies": {
-    "ava": "^1.4.1",
+    "ava": "^2.0.0",
     "builtin-modules": "^3.1.0",
     "c8": "^5.0.1",
     "documentation": "^11.0.0",
@@ -60,7 +60,6 @@
   "homepage": "https://github.com/arlac77/npm-navigator#readme",
   "ava": {
     "files": [
-      "tests/*-test.js",
       "tests/*-test.mjs"
     ],
     "require": [
@@ -69,7 +68,6 @@
     "babel": false,
     "compileEnhancements": false,
     "extensions": [
-      "js",
       "mjs"
     ]
   },
