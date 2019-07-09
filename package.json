@@ -28,7 +28,7 @@
     "WiredPanels": "^2.0.0"
   },
   "devDependencies": {
-    "ava": "^2.1.0",
+    "ava": "^2.2.0",
     "builtin-modules": "^3.1.0",
     "c8": "^5.0.2",
     "documentation": "^11.0.1",
@@ -37,7 +37,7 @@
     "koa-static": "^5.0.0",
     "markdown-doctest": "^0.9.1",
     "puppeteer": "^1.18.1",
-    "rollup": "^1.16.6",
+    "rollup": "^1.16.7",
     "rollup-plugin-cleanup": "^3.1.1",
     "rollup-plugin-commonjs": "^10.0.1",
     "rollup-plugin-css-only": "^0.4.0",
@@ -45,7 +45,7 @@
     "rollup-plugin-fill-html": "^1.1.0",
     "rollup-plugin-json": "^4.0.0",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "semantic-release": "^15.13.18"
+    "semantic-release": "^15.13.19"
   },
   "engines": {
     "node": ">=10.16.0"
