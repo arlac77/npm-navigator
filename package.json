@@ -45,7 +45,7 @@
     "rollup-plugin-fill-html": "^1.1.0",
     "rollup-plugin-json": "^4.0.0",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "semantic-release": "^15.13.23"
+    "semantic-release": "^15.13.24"
   },
   "engines": {
     "node": ">=10.16.0"
