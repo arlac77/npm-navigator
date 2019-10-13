@@ -35,7 +35,7 @@
     "esm": "^3.2.25",
     "koa": "^2.8.2",
     "koa-static": "^5.0.0",
-    "markdown-doctest": "^0.9.1",
+    "markdown-doctest": "^1.0.0",
     "puppeteer": "^1.19.0",
     "rollup": "^1.23.1",
     "rollup-plugin-cleanup": "^3.1.1",
