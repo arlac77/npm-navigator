@@ -33,7 +33,7 @@
     "c8": "^5.0.4",
     "documentation": "^12.1.2",
     "esm": "^3.2.25",
-    "koa": "^2.8.2",
+    "koa": "^2.10.0",
     "koa-static": "^5.0.0",
     "markdown-doctest": "^1.0.0",
     "puppeteer": "^1.19.0",
