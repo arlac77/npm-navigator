@@ -38,7 +38,7 @@
     "koa-static": "^5.0.0",
     "markdown-doctest": "^1.0.0",
     "puppeteer": "^2.0.0",
-    "rollup": "^1.27.7",
+    "rollup": "^1.27.8",
     "rollup-plugin-cleanup": "^3.1.1",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-css-only": "^0.4.0",
