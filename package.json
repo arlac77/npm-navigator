@@ -43,7 +43,7 @@
     "rollup-plugin-css-only": "^2.0.0",
     "rollup-plugin-executable": "^1.5.2",
     "rollup-plugin-fill-html": "^1.1.0",
-    "semantic-release": "^15.14.0"
+    "semantic-release": "^16.0.0"
   },
   "engines": {
     "node": ">=12.14.1"
