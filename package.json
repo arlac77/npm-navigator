@@ -16,11 +16,11 @@
   "license": "BSD-2-Clause",
   "scripts": {
     "prepare": "rollup -c",
+    "pretest": "rollup -c tests/rollup.config.js",
     "test": "ava --node-arguments '--experimental-modules' --timeout 2m",
     "cover": "c8 -x 'tests/**/*' --temp-directory build/tmp ava --node-arguments '--experimental-modules' --timeout 2m && c8 report -r lcov -o build/coverage --temp-directory build/tmp",
     "docs": "documentation readme src/main.js --section=API",
-    "lint": "documentation lint src/main.js",
-    "pretest": "rollup -c tests/rollup.config.js"
+    "lint": "documentation lint src/main.js"
   },
   "dependencies": {
     "WiredPanels": "^2.0.0"
