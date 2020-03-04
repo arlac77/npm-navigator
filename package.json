@@ -54,6 +54,9 @@
   },
   "homepage": "https://github.com/arlac77/npm-navigator#readme",
   "template": {
-    "inheritFrom": "arlac77/template-cli-app"
+    "inheritFrom": [
+      "arlac77/template-cli-app",
+      "arlac77/template-github"
+    ]
   }
 }
