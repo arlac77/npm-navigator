@@ -26,6 +26,8 @@
     "WiredPanels": "^2.0.0"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-json": "^4.0.2",
     "@rollup/plugin-node-resolve": "^7.1.1",
     "acorn-class-fields": "https://github.com/arlac77/acorn-class-fields.git",
     "ava": "^3.5.2",
@@ -35,11 +37,9 @@
     "koa": "^2.11.0",
     "koa-static": "^5.0.0",
     "puppeteer": "^2.1.1",
-    "rollup": "^2.3.0",
+    "rollup": "^2.3.1",
     "rollup-plugin-cleanup": "^3.1.1",
-    "rollup-plugin-css-only": "^2.0.0",
     "rollup-plugin-executable": "^1.5.2",
-    "rollup-plugin-fill-html": "^1.1.0",
     "semantic-release": "^17.0.4"
   },
   "engines": {
