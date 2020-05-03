@@ -36,7 +36,7 @@
     "documentation": "^12.3.0",
     "koa": "^2.11.0",
     "koa-static": "^5.0.0",
-    "puppeteer": "^2.1.1",
+    "puppeteer": "^3.0.2",
     "rollup": "^2.7.6",
     "rollup-plugin-cleanup": "^3.1.1",
     "rollup-plugin-executable": "^1.5.3",
