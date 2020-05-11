@@ -1,8 +1,5 @@
 import WiredPanels from 'WiredPanels';
-import { loadModule } from './util';
-import './main.css';
-import 'WiredPanels/WiredPanels.css';
-import 'WiredPanels/Colors/Neon.css';
+import { loadModule } from './util.mjs';
 
 const wiredPanels = new WiredPanels(
   document.getElementById('graph'),
@@ -32,4 +29,4 @@ wiredPanels.svg.ondblclick = async event => {
   panel.y = mousePos[1];
 };
 
-loadModule(wiredPanels, 'kronos-cluster-node', 'latest', 1);
+loadModule(wiredPanels, 'rollup', 'latest', 1);
