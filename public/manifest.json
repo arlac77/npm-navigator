@@ -1,0 +1,9 @@
+{
+  "name": "{{name}}",
+  "short_name": "{{name}}",
+  "description": "{{description}}",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "icons": []
+}
