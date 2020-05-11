@@ -1,8 +1,8 @@
-import WiredPanels from 'WiredPanels';
-import { loadModule } from './util.mjs';
+import WiredPanels from "https://unpkg.com/WiredPanels@2.0.0/WiredPanels.js";
+import { loadModule } from "./util.mjs";
 
 const wiredPanels = new WiredPanels(
-  document.getElementById('graph'),
+  document.getElementById("graph"),
   {},
   {
     activate() {},
@@ -12,7 +12,7 @@ const wiredPanels = new WiredPanels(
       return true;
     },
     wireConnect(node, wire, nodesToAdd) {
-      if (node.type === 'panel') {
+      if (node.type === "panel") {
       } else {
         wire.dstSocket = node;
         return forward => wiredPanels.updatePanelGeometry(node.panel);
@@ -22,11 +22,11 @@ const wiredPanels = new WiredPanels(
 );
 
 wiredPanels.svg.ondblclick = async event => {
-  const panel = loadModule('expression-expander');
+  const panel = loadModule("expression-expander");
   const mousePos = wiredPanels.mousePositionOfEvent(event);
 
   panel.x = mousePos[0];
   panel.y = mousePos[1];
 };
 
-loadModule(wiredPanels, 'rollup', 'latest', 1);
+loadModule(wiredPanels, "rollup", "latest", 1);
