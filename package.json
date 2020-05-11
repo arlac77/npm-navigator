@@ -40,7 +40,7 @@
   },
   "homepage": "https://github.com/arlac77/npm-navigator#readme",
   "config": {
-    "base": "/services/npm-navigator/"
+    "base": "/services/npm-navigator"
   },
   "pacman": {
     "groups": "web",
