@@ -15,8 +15,7 @@
     }
   ],
   "license": "BSD-2-Clause",
-  "scripts": {
-  },
+  "scripts": {},
   "dependencies": {
     "WiredPanels": "^2.0.0"
   },
