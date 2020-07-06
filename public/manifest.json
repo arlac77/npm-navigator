@@ -5,5 +5,6 @@
   "start_url": "/index.html",
   "display": "standalone",
   "orientation": "portrait",
-  "icons": []
+  "icons": [],
+  "background_color": "#ffffff"
 }
