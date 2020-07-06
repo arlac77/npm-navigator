@@ -27,26 +27,18 @@
     "svelte-session-manager": "^1.1.4"
   },
   "devDependencies": {
-    "@rollup/plugin-babel": "^5.0.3",
     "@rollup/plugin-commonjs": "^13.0.0",
     "@rollup/plugin-inject": "^4.0.2",
-    "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^8.1.0",
-    "@rollup/plugin-typescript": "^5.0.0",
     "@rollup/plugin-virtual": "^2.0.3",
     "@semantic-release/commit-analyzer": "^8.0.1",
     "@semantic-release/exec": "^5.0.0",
     "@semantic-release/release-notes-generator": "^9.0.1",
-    "builtin-modules": "^3.1.0",
     "npm-pkgbuild": "^6.12.1",
     "postcss-import": "^12.0.1",
     "rollup": "^2.19.0",
-    "rollup-plugin-cleanup": "^3.1.1",
     "rollup-plugin-consts": "^1.0.2",
     "rollup-plugin-dev": "^1.1.2",
-    "rollup-plugin-executable": "^1.6.0",
-    "rollup-plugin-gzip": "2.5.0",
-    "rollup-plugin-native": "^1.2.14",
     "rollup-plugin-postcss": "^3.1.2",
     "rollup-plugin-svelte": "git+https://github.com/ctavan/rollup-plugin-svelte.git#handle-missing-exports-gracefully",
     "rollup-plugin-terser": "^6.1.0",
@@ -97,8 +89,7 @@
   },
   "template": {
     "inheritFrom": [
-      "arlac77/template-github",
-      "arlac77/template-web-app",
+      "arlac77/template-arlac77-github",
       "arlac77/template-svelte-app"
     ]
   }
