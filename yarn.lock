@@ -3955,7 +3955,6 @@ npm@^6.10.3:
     cmd-shim "^3.0.3"
     columnify "~1.5.4"
     config-chain "^1.1.12"
-    debuglog "*"
     detect-indent "~5.0.0"
     detect-newline "^2.1.0"
     dezalgo "~1.0.3"
@@ -3970,7 +3969,6 @@ npm@^6.10.3:
     has-unicode "~2.0.1"
     hosted-git-info "^2.8.8"
     iferr "^1.0.2"
-    imurmurhash "*"
     infer-owner "^1.0.4"
     inflight "~1.0.6"
     inherits "^2.0.4"
@@ -3989,14 +3987,8 @@ npm@^6.10.3:
     libnpx "^10.2.2"
     lock-verify "^2.1.0"
     lockfile "^1.0.4"
-    lodash._baseindexof "*"
     lodash._baseuniq "~4.6.0"
-    lodash._bindcallback "*"
-    lodash._cacheindexof "*"
-    lodash._createcache "*"
-    lodash._getnative "*"
     lodash.clonedeep "~4.5.0"
-    lodash.restparam "*"
     lodash.union "~4.6.0"
     lodash.uniq "~4.5.0"
     lodash.without "~4.4.0"
@@ -5964,10 +5956,10 @@ svelte-common@^2.0.3:
   resolved "https://registry.yarnpkg.com/svelte-common/-/svelte-common-2.0.3.tgz#1605ac9cea0803e536aa87d52a2d3abc8179fc6c"
   integrity sha512-U3yA3ZnLqV8RFYzPckiXnnfGfbOz5cpllddZE/NiBhJo575qhFnI63ccCJ3k/pxxvFZANFkUcJYLibvnYWhAOg==
 
-svelte-guard-history-router@^2.5.3:
-  version "2.5.4"
-  resolved "https://registry.yarnpkg.com/svelte-guard-history-router/-/svelte-guard-history-router-2.5.4.tgz#fe17ee170d7f3d9233de3250bb43697e037aebe1"
-  integrity sha512-07udSVKIZ21FA9zcqEgGnyCNpstlz/5GLvlqMK5EHk0imGxrSPvs68kKsGMOxopXaSSbpP1iN2gLe6jFOT/TBA==
+svelte-guard-history-router@^2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/svelte-guard-history-router/-/svelte-guard-history-router-2.6.0.tgz#d917f2ffb39710aeac02bcb85c13fb402f7f5e7c"
+  integrity sha512-nRmefJuHo7E8LBM5eZQfnOCRdvD+meBof7qw8GvGrDMCkicKNqNzCGvHPo/2vIHLDQLhIF6pOu8OZ9d8VaiJrA==
   dependencies:
     multi-path-matcher "^2.0.15"
 
