@@ -5924,10 +5924,10 @@ svelte-common@^2.0.3:
   resolved "https://registry.yarnpkg.com/svelte-common/-/svelte-common-2.0.3.tgz#1605ac9cea0803e536aa87d52a2d3abc8179fc6c"
   integrity sha512-U3yA3ZnLqV8RFYzPckiXnnfGfbOz5cpllddZE/NiBhJo575qhFnI63ccCJ3k/pxxvFZANFkUcJYLibvnYWhAOg==
 
-svelte-guard-history-router@^2.6.0:
-  version "2.6.3"
-  resolved "https://registry.yarnpkg.com/svelte-guard-history-router/-/svelte-guard-history-router-2.6.3.tgz#51e4d36a1387d72d96959ff3656d6cc8bb75b4bd"
-  integrity sha512-wmu3uh8V/9GSkZW/BaQ91Jz1Yku4dAstLTogXHZR9AOOJUKJE1cBGcIVQ+216ecCpSG6D3cIA3aD6tffHf5t3w==
+svelte-guard-history-router@^2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/svelte-guard-history-router/-/svelte-guard-history-router-2.7.0.tgz#42e0f3248e10c6743e252952eee1207fb082920b"
+  integrity sha512-Gfn57tT75zE95YpBB+Pz20KJPfOAx+OHCyL+Q+KejLRpes0OJwcfISRBTtqKojn6hOQyBeB1KGb8sBR35wJqow==
   dependencies:
     multi-path-matcher "^2.0.15"
 
