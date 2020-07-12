@@ -3649,10 +3649,10 @@ ms@^2.0.0, ms@^2.1.1, ms@^2.1.2:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
 
-multi-path-matcher@^2.0.15:
-  version "2.0.15"
-  resolved "https://registry.yarnpkg.com/multi-path-matcher/-/multi-path-matcher-2.0.15.tgz#d7a36fe57d2e1d618da98309c4acb44a9759e6ac"
-  integrity sha512-1udTRs/ZveQdLf/Rr8bhK9g8aF5HiKVC0iyMOQQi3DRHtnDv/j6OVV14kJJLFt2I6AUMzZX9DTaXlpiewgz7uA==
+multi-path-matcher@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/multi-path-matcher/-/multi-path-matcher-2.1.2.tgz#f7f15537a0fca78eb9ef29ddf33a3479621b4552"
+  integrity sha512-nS5EmFWQxXOtxtRE3fwSocdvsx6joe3NNys3TvKE8fPaVaiLOuashDe4RIIGkoKWa/bIgxQSNU1jqdin2taPBg==
 
 mute-stream@~0.0.4:
   version "0.0.8"
@@ -5925,12 +5925,12 @@ svelte-common@^2.0.3:
   resolved "https://registry.yarnpkg.com/svelte-common/-/svelte-common-2.0.4.tgz#3db3c299b60e90cdd4f5df84a1c219b31dd7a143"
   integrity sha512-Eba+QxcrCxvq1R+na0pkaIAe0zLHWHWvjj5Hd2C0c/Nj1A+k9auX1PbXmC84ghMTE0q/meUjIMrjZhnHk7hAaw==
 
-svelte-guard-history-router@^2.7.0:
-  version "2.13.6"
-  resolved "https://registry.yarnpkg.com/svelte-guard-history-router/-/svelte-guard-history-router-2.13.6.tgz#1e176132bb8dd5eb30dfbfa5eff8b0237fb6ca2a"
-  integrity sha512-LpaHtC2Gs6CL2dcjIZ1uHWoeBz1NXgRvmbniLwtPXQ9m80rdkCxhNnKJ5+KgvKzdouO2ZimkI2MyENbTkaBCzQ==
+svelte-guard-history-router@^2.15.0:
+  version "2.17.2"
+  resolved "https://registry.yarnpkg.com/svelte-guard-history-router/-/svelte-guard-history-router-2.17.2.tgz#ca310d05620b90d1c537a7fe0f8512aef754895f"
+  integrity sha512-3Dj5524MnwMFb156376wGCiv3ErEwXQ93k1ONJmB6p5LYFoLUTBJaKIfw8/3sP82EmCWy+RTRMtRj3KBozHD8Q==
   dependencies:
-    multi-path-matcher "^2.0.15"
+    multi-path-matcher "^2.1.2"
 
 svelte-session-manager@^1.1.4:
   version "1.1.4"
