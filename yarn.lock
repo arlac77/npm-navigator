@@ -5932,9 +5932,9 @@ svelte-guard-history-router@^2.19.0:
     multi-path-matcher "^2.1.2"
 
 svelte-session-manager@^1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/svelte-session-manager/-/svelte-session-manager-1.1.4.tgz#dfc2186339c61e1976fccb065ebdb84809bcd9d9"
-  integrity sha512-K33e1wfCJ/M1jBdwUo9/JawPpGzUO3Qp4dfM9aaW1nVYmHyngMRFxS/jZnnF0/P+FE2kTZRUz3JhR5xRl1Qfnw==
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/svelte-session-manager/-/svelte-session-manager-1.1.5.tgz#5308a8fccc9a8bfbe31a1cb35cca8e8fa8079c50"
+  integrity sha512-opybDFGBIItX4ZAdM+JV1F/wvGLfchQExKGp0muhB8gpIxz6cNBpOmgf1eNnLTUwoLOme9xGHLOkeN68/Yfj/A==
 
 svelte@^3.24.0:
   version "3.24.0"
