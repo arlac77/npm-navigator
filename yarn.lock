@@ -5920,9 +5920,9 @@ supports-hyperlinks@^2.1.0:
     supports-color "^7.0.0"
 
 svelte-common@^2.0.3:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/svelte-common/-/svelte-common-2.0.4.tgz#3db3c299b60e90cdd4f5df84a1c219b31dd7a143"
-  integrity sha512-Eba+QxcrCxvq1R+na0pkaIAe0zLHWHWvjj5Hd2C0c/Nj1A+k9auX1PbXmC84ghMTE0q/meUjIMrjZhnHk7hAaw==
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/svelte-common/-/svelte-common-2.1.3.tgz#99b98dc4c4e8dd9e1ca53413cf682c3e8200c961"
+  integrity sha512-BzfI6+bMFJ09PwMMkZ0VVdESRzfSEj54ucvnpQw7Dtzhlte/1pEIEnTXU1hid8AnSLRSwOzH/f6+9xcvi/9bIw==
 
 svelte-guard-history-router@^2.19.0:
   version "2.21.0"
