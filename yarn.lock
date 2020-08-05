@@ -5919,12 +5919,12 @@ supports-hyperlinks@^2.1.0:
     has-flag "^4.0.0"
     supports-color "^7.0.0"
 
-svelte-common@^2.1.4:
-  version "2.1.5"
-  resolved "https://registry.yarnpkg.com/svelte-common/-/svelte-common-2.1.5.tgz#e416c72886578c880b71ea418583776bb9794781"
-  integrity sha512-atJZfVvNNyBSr7eFDjpzWDLjt7Swcg4WVdFtcX0+mUVkxksaESjU7faOgaBBtpQ5Z9QUFvKKgjA/rvzQ/+l39Q==
+svelte-common@^2.1.5:
+  version "2.1.6"
+  resolved "https://registry.yarnpkg.com/svelte-common/-/svelte-common-2.1.6.tgz#687b0b8efbcd7306cfbbc155e1fc8325bf51dc03"
+  integrity sha512-I9U/y4NzqJu5eaVablaZPJra5RHRORlJ3uGxGGLsGvZf362RcKZPy83H/gVv7CvDVWG+VIUneZ40p+pIHCPwAw==
 
-svelte-guard-history-router@^2.23.7:
+svelte-guard-history-router@^2.23.9:
   version "2.23.9"
   resolved "https://registry.yarnpkg.com/svelte-guard-history-router/-/svelte-guard-history-router-2.23.9.tgz#8425822a171ce363d0ab8a366959c4f98eb5cf4a"
   integrity sha512-hq8iWX90WAPU/jFBNSbgWAsi+ruK+LzSRjm9FT8gdh8CKp3nF1BTmwm2XEeHKhzTbfT9fxm/fJ5Upkt6QzPBTQ==
@@ -5932,9 +5932,9 @@ svelte-guard-history-router@^2.23.7:
     multi-path-matcher "^2.1.2"
 
 svelte-session-manager@^1.1.6:
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/svelte-session-manager/-/svelte-session-manager-1.1.6.tgz#99bec34b830550e05392c4665f31eb8a3ef40e25"
-  integrity sha512-/DqI3yvVpvsIW4Typ4AVKbVWbqt6yJ32JOXYFcl3ggXf6vHIi1CVT72EX8HAzTLi5fSYfGUrtHjuQrMxWSbWMA==
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/svelte-session-manager/-/svelte-session-manager-1.1.7.tgz#d1dbaaeba9a24f15b4fb9044ff46c04a7eaffcf6"
+  integrity sha512-oIcCrOiZK0vY0nU8ikW2c5jjVy23zzuxMxdaQdRVkNZSKOom1V/+biqrOeux80K2C3OridsKVJgni6+tEbOxpA==
 
 svelte@^3.24.0:
   version "3.24.0"
