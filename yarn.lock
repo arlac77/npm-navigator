@@ -3520,7 +3520,8 @@ methods@~1.1.0:
 
 mf-styling@arlac77/mf-styling:
   version "0.0.0-semantic-release"
-  resolved "https://codeload.github.com/arlac77/mf-styling/tar.gz/cd67104f787721c8c6a9e72239494fa5fbc09bbc"
+  uid d97ef50e55b3a328eeb638a2db61dbfb74112e9d
+  resolved "https://codeload.github.com/arlac77/mf-styling/tar.gz/d97ef50e55b3a328eeb638a2db61dbfb74112e9d"
 
 micromatch@^4.0.2:
   version "4.0.2"
@@ -5919,12 +5920,12 @@ supports-hyperlinks@^2.1.0:
     has-flag "^4.0.0"
     supports-color "^7.0.0"
 
-svelte-common@^2.1.4:
-  version "2.1.5"
-  resolved "https://registry.yarnpkg.com/svelte-common/-/svelte-common-2.1.5.tgz#e416c72886578c880b71ea418583776bb9794781"
-  integrity sha512-atJZfVvNNyBSr7eFDjpzWDLjt7Swcg4WVdFtcX0+mUVkxksaESjU7faOgaBBtpQ5Z9QUFvKKgjA/rvzQ/+l39Q==
+svelte-common@^2.1.5:
+  version "2.1.6"
+  resolved "https://registry.yarnpkg.com/svelte-common/-/svelte-common-2.1.6.tgz#687b0b8efbcd7306cfbbc155e1fc8325bf51dc03"
+  integrity sha512-I9U/y4NzqJu5eaVablaZPJra5RHRORlJ3uGxGGLsGvZf362RcKZPy83H/gVv7CvDVWG+VIUneZ40p+pIHCPwAw==
 
-svelte-guard-history-router@^2.23.7:
+svelte-guard-history-router@^2.23.9:
   version "2.23.9"
   resolved "https://registry.yarnpkg.com/svelte-guard-history-router/-/svelte-guard-history-router-2.23.9.tgz#8425822a171ce363d0ab8a366959c4f98eb5cf4a"
   integrity sha512-hq8iWX90WAPU/jFBNSbgWAsi+ruK+LzSRjm9FT8gdh8CKp3nF1BTmwm2XEeHKhzTbfT9fxm/fJ5Upkt6QzPBTQ==
