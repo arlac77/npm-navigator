@@ -5310,7 +5310,7 @@ rollup-plugin-dev@^1.1.2:
     koa-static "^5.0.0"
     ms "^2.1.2"
 
-rollup-plugin-postcss@^3.1.3:
+rollup-plugin-postcss@^3.1.4:
   version "3.1.4"
   resolved "https://registry.yarnpkg.com/rollup-plugin-postcss/-/rollup-plugin-postcss-3.1.4.tgz#b672dd6849d013f4b0c1ccff80ef54ff03817444"
   integrity sha512-nLefjTDau8dpfEq1VSag1jjRizQc9/Io26mlC+/zkJVnvgKEz9xt3nvYW6vlOM0LffGFVapZNyr23Led1VN9Lw==
@@ -5355,10 +5355,10 @@ rollup-pluginutils@^2.8.2:
   dependencies:
     estree-walker "^0.6.1"
 
-rollup@^2.23.0:
-  version "2.23.0"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.23.0.tgz#b7ab1fee0c0e60132fd0553c4df1e9cdacfada9d"
-  integrity sha512-vLNmZFUGVwrnqNAJ/BvuLk1MtWzu4IuoqsH9UWK5AIdO3rt8/CSiJNvPvCIvfzrbNsqKbNzPAG1V2O4eTe2XZg==
+rollup@^2.23.1:
+  version "2.23.1"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.23.1.tgz#d458d28386dc7660c2e8a4978bea6f9494046c20"
+  integrity sha512-Heyl885+lyN/giQwxA8AYT2GY3U+gOlTqVLrMQYno8Z1X9lAOpfXPiKiZCyPc25e9BLJM3Zlh957dpTlO4pa8A==
   optionalDependencies:
     fsevents "~2.1.2"
 
@@ -5920,19 +5920,19 @@ supports-hyperlinks@^2.1.0:
     has-flag "^4.0.0"
     supports-color "^7.0.0"
 
-svelte-common@^2.1.5:
+svelte-common@^2.1.6:
   version "2.1.6"
   resolved "https://registry.yarnpkg.com/svelte-common/-/svelte-common-2.1.6.tgz#687b0b8efbcd7306cfbbc155e1fc8325bf51dc03"
   integrity sha512-I9U/y4NzqJu5eaVablaZPJra5RHRORlJ3uGxGGLsGvZf362RcKZPy83H/gVv7CvDVWG+VIUneZ40p+pIHCPwAw==
 
-svelte-guard-history-router@^2.23.9:
+svelte-guard-history-router@^2.24.0:
   version "2.24.0"
   resolved "https://registry.yarnpkg.com/svelte-guard-history-router/-/svelte-guard-history-router-2.24.0.tgz#a3300335b73b27e4bfe9ad7c6c6f37775c2df001"
   integrity sha512-lgVoeZJmarliKkBw1J8b2Hy9SxSZ9xSUM26RDBUau5Q+w1vFaezXcsUJvKAIMF+RI16GJQBQZevHPDHZ3BFazg==
   dependencies:
     multi-path-matcher "^2.1.2"
 
-svelte-session-manager@^1.1.6:
+svelte-session-manager@^1.1.7:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/svelte-session-manager/-/svelte-session-manager-1.1.7.tgz#d1dbaaeba9a24f15b4fb9044ff46c04a7eaffcf6"
   integrity sha512-oIcCrOiZK0vY0nU8ikW2c5jjVy23zzuxMxdaQdRVkNZSKOom1V/+biqrOeux80K2C3OridsKVJgni6+tEbOxpA==
