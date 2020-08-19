@@ -1866,7 +1866,7 @@ execa@^4.0.0, execa@^4.0.3:
     signal-exit "^3.0.2"
     strip-final-newline "^2.0.0"
 
-expression-expander@^7.0.4:
+expression-expander@^7.0.5:
   version "7.0.5"
   resolved "https://registry.yarnpkg.com/expression-expander/-/expression-expander-7.0.5.tgz#111758a50be2a5527025edf4dd9f36a1a8207e0d"
   integrity sha512-SatxuPs/VtMkSoN/5ppJm9Tajkqq071Alh7HVptvPkTHzyhgUau6i4YDEA/aaREIJMHN47FVlxcmj4FngA0L4A==
@@ -3829,7 +3829,7 @@ npm-packlist@^1.1.12, npm-packlist@^1.4.8:
     npm-bundled "^1.0.1"
     npm-normalize-package-bin "^1.0.1"
 
-npm-packlist@^2.1.1:
+npm-packlist@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/npm-packlist/-/npm-packlist-2.1.2.tgz#a3045b52aefc37e7a5e86a55e6ca8cb1e909e25a"
   integrity sha512-eByPaP+wsKai0BJX5pmb58d3mfR0zUATcnyuvSxIudTEn+swCPFLxh7srCmqB4hr7i9V24/DPjjq5b2qUtbgXQ==
@@ -3849,16 +3849,16 @@ npm-pick-manifest@^3.0.0, npm-pick-manifest@^3.0.2:
     semver "^5.4.1"
 
 npm-pkgbuild@^6.12.5:
-  version "6.12.5"
-  resolved "https://registry.yarnpkg.com/npm-pkgbuild/-/npm-pkgbuild-6.12.5.tgz#c32d303d7e582c1d0e01e34fbd5c0177dbf67e29"
-  integrity sha512-5N/qHY+c78RDgccURM4s7CAGYWJfGcbmG+ymQXmMCYuOxxjxlgF1ox09/2BgrnjIem9VS/43F3tL0yTcdkTrFA==
+  version "6.12.6"
+  resolved "https://registry.yarnpkg.com/npm-pkgbuild/-/npm-pkgbuild-6.12.6.tgz#a877afd04a090718d75b015eb4d271111b7b26bf"
+  integrity sha512-H80f/ARn1BextPoIq/OKrRL2yZ3DtHhROqiD27daSs9NwkofN8hvPtWOLsyacAQY/Cbi/x55UXXSGKbN8peE9g==
   dependencies:
     commander "^6.0.0"
     execa "^4.0.3"
-    expression-expander "^7.0.4"
+    expression-expander "^7.0.5"
     globby "^11.0.1"
     iterable-string-interceptor "^1.0.5"
-    npm-packlist "^2.1.1"
+    npm-packlist "^2.1.2"
 
 npm-profile@^4.0.2, npm-profile@^4.0.4:
   version "4.0.4"
@@ -5355,7 +5355,7 @@ rollup-pluginutils@^2.8.2:
   dependencies:
     estree-walker "^0.6.1"
 
-rollup@^2.26.2:
+rollup@^2.26.3:
   version "2.26.3"
   resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.26.3.tgz#502c755872a4590937cfa4e8f7eb99d3bc3c4025"
   integrity sha512-Mlt39/kL2rA9egcbQbaZV1SNVplGqYYhDDMcGgHPPE0tvM3R4GrB+IEdYy2QtTrdzMQx57ZcqDFf/KWWm8F+uw==
