@@ -5310,10 +5310,10 @@ rollup-plugin-dev@^1.1.2:
     koa-static "^5.0.0"
     ms "^2.1.2"
 
-rollup-plugin-postcss@^3.1.5:
-  version "3.1.5"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-postcss/-/rollup-plugin-postcss-3.1.5.tgz#4bcc19a7f95ab8fb17fb0ca59080fe3887421db2"
-  integrity sha512-oPD3ubb1JDBwzNMca+OZUpYxyxrIw9ihhUyvEbOwzzj0rR2UEKm8GtfhFXVGDWwBGp5HIK8ss/r8vRStYDddRA==
+rollup-plugin-postcss@^3.1.6:
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-postcss/-/rollup-plugin-postcss-3.1.6.tgz#d997b69df09394918dbecf6b699add06ee4a1fe6"
+  integrity sha512-lkKMTXhPyaNgELFFf7mAGLqFTr13Lswak1YkP+b9rfl6YNVHxs3PYgZFAGLOyLvOtSuCVRq6BryXs1EgyC+nHQ==
   dependencies:
     chalk "^4.0.0"
     concat-with-sourcemaps "^1.1.0"
@@ -5937,7 +5937,7 @@ svelte-session-manager@^1.1.7:
   resolved "https://registry.yarnpkg.com/svelte-session-manager/-/svelte-session-manager-1.1.7.tgz#d1dbaaeba9a24f15b4fb9044ff46c04a7eaffcf6"
   integrity sha512-oIcCrOiZK0vY0nU8ikW2c5jjVy23zzuxMxdaQdRVkNZSKOom1V/+biqrOeux80K2C3OridsKVJgni6+tEbOxpA==
 
-svelte@^3.24.0:
+svelte@^3.24.1:
   version "3.24.1"
   resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.24.1.tgz#aca364937dd1df27fe131e2a4c234acb6061db4b"
   integrity sha512-OX/IBVUJSFo1rnznXdwf9rv6LReJ3qQ0PwRjj76vfUWyTfbHbR9OXqJBnUrpjyis2dwYcbT2Zm1DFjOOF1ZbbQ==
