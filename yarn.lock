@@ -5330,9 +5330,10 @@ rollup-plugin-postcss@^3.1.6:
     safe-identifier "^0.4.1"
     style-inject "^0.3.0"
 
-"rollup-plugin-svelte@git+https://github.com/ctavan/rollup-plugin-svelte.git#handle-missing-exports-gracefully":
-  version "5.2.2"
-  resolved "git+https://github.com/ctavan/rollup-plugin-svelte.git#9da2f9cd0dd1193fdbdedb13fc7389ac43e460ab"
+rollup-plugin-svelte@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-svelte/-/rollup-plugin-svelte-6.0.0.tgz#a5b15354371ec17fe67bd4def4d4ea1b915f74cb"
+  integrity sha512-y9qtWa+iNYwXdOZqaEqz3i6k3gzofC9JXzv+WVKDOt0DLiJxJaSrlKKf4YkKG91RzTK5Lo+0fW8in9QH/DxEhA==
   dependencies:
     require-relative "^0.8.7"
     rollup-pluginutils "^2.8.2"
