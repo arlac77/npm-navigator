@@ -70,7 +70,7 @@
     "installdir": "/services/npm-navigator/frontend",
     "hooks": "pacman/hooks.sh",
     "depends": {
-      "nginx-mainline": ">=1.19.0"
+      "nginx-mainline": ">=1.19.1"
     }
   },
   "release": {
