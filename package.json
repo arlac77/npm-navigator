@@ -17,8 +17,8 @@
   ],
   "license": "BSD-2-Clause",
   "scripts": {
-    "prepare": "rollup -c",
-    "start": "rollup -c -w"
+    "prepare": "rollup -c && rollup -c rollup.config.mjs",
+    "start": "rollup -c -w && rollup -c -w rollup.config.mjs"
   },
   "dependencies": {
     "WiredPanels": "^2.0.0",
