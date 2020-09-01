@@ -5310,7 +5310,7 @@ rollup-plugin-dev@^1.1.2:
     koa-static "^5.0.0"
     ms "^2.1.2"
 
-rollup-plugin-postcss@^3.1.6:
+rollup-plugin-postcss@^3.1.8:
   version "3.1.8"
   resolved "https://registry.yarnpkg.com/rollup-plugin-postcss/-/rollup-plugin-postcss-3.1.8.tgz#d1bcaf8eb0fcb0936e3684c22dd8628d13a82fd1"
   integrity sha512-JHnGfW8quNc6ePxEkZ05HEZ1YiRxDgY9RKEetMfsrwxR2kh/d90OVScTc6b1c2Q17Cs/5TRYL+1uddG21lQe3w==
@@ -5922,9 +5922,9 @@ supports-hyperlinks@^2.1.0:
     supports-color "^7.0.0"
 
 svelte-common@^2.1.6:
-  version "2.1.6"
-  resolved "https://registry.yarnpkg.com/svelte-common/-/svelte-common-2.1.6.tgz#687b0b8efbcd7306cfbbc155e1fc8325bf51dc03"
-  integrity sha512-I9U/y4NzqJu5eaVablaZPJra5RHRORlJ3uGxGGLsGvZf362RcKZPy83H/gVv7CvDVWG+VIUneZ40p+pIHCPwAw==
+  version "2.1.7"
+  resolved "https://registry.yarnpkg.com/svelte-common/-/svelte-common-2.1.7.tgz#ae48ddd75f2ae0f5446c80303cbde6d2043c0432"
+  integrity sha512-/DjXc0Vt+8NG67jUl+CtIfWgp7wA2vSS7HN3A/OKca7U5uQgRrHCNVsgThXZElfKFg7G8OFIIf1yidIf/tN4nw==
 
 svelte-guard-history-router@^2.24.0:
   version "2.24.0"
