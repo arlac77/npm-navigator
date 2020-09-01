@@ -23,7 +23,7 @@
   "dependencies": {
     "WiredPanels": "^2.0.0",
     "mf-styling": "arlac77/mf-styling",
-    "svelte-common": "^2.1.6",
+    "svelte-common": "^2.1.7",
     "svelte-guard-history-router": "^2.24.0",
     "svelte-session-manager": "^1.1.7"
   },
