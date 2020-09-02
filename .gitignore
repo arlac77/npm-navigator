@@ -10,3 +10,4 @@ build
 *.js.map
 *.mjs.map
 public/bundle.*
+bundle.*
