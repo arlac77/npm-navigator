@@ -3848,10 +3848,10 @@ npm-pick-manifest@^3.0.0, npm-pick-manifest@^3.0.2:
     npm-package-arg "^6.0.0"
     semver "^5.4.1"
 
-npm-pkgbuild@^6.12.6:
-  version "6.12.6"
-  resolved "https://registry.yarnpkg.com/npm-pkgbuild/-/npm-pkgbuild-6.12.6.tgz#a877afd04a090718d75b015eb4d271111b7b26bf"
-  integrity sha512-H80f/ARn1BextPoIq/OKrRL2yZ3DtHhROqiD27daSs9NwkofN8hvPtWOLsyacAQY/Cbi/x55UXXSGKbN8peE9g==
+npm-pkgbuild@^6.12.7:
+  version "6.12.7"
+  resolved "https://registry.yarnpkg.com/npm-pkgbuild/-/npm-pkgbuild-6.12.7.tgz#7964bc76d2187013d0da000916c2d6633034dec8"
+  integrity sha512-6EoK7rGZgXYmR5cv4qIGSjjEajm0iYIgfFivEev3uhoX7CsubjUJ6Om/f5V9N0bN5AYaKS+EnGTnq7zpnUTMOg==
   dependencies:
     commander "^6.0.0"
     execa "^4.0.3"
@@ -5339,10 +5339,10 @@ rollup-plugin-svelte@^6.0.0:
     rollup-pluginutils "^2.8.2"
     sourcemap-codec "^1.4.8"
 
-rollup-plugin-terser@^7.0.1:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-terser/-/rollup-plugin-terser-7.0.1.tgz#df72d8272e03fcb504a76f414b9509c63c5eaf54"
-  integrity sha512-HL0dgzSxBYG/Ly9i/E5Sc+PuKKZ0zBzk11VmLCfdUtpqH4yYqkLclPkTqRy85FU9246yetImOClaQ/ufnj08vg==
+rollup-plugin-terser@^7.0.2:
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-terser/-/rollup-plugin-terser-7.0.2.tgz#e8fbba4869981b2dc35ae7e8a502d5c6c04d324d"
+  integrity sha512-w3iIaU4OxcF52UUXiZNsNeuXIMDvFrr+ZXK6bFZ0Q60qyVfq4uLptoS4bbq3paG3x216eQllFZX7zt6TIImguQ==
   dependencies:
     "@babel/code-frame" "^7.10.4"
     jest-worker "^26.2.1"
@@ -5356,10 +5356,10 @@ rollup-pluginutils@^2.8.2:
   dependencies:
     estree-walker "^0.6.1"
 
-rollup@^2.26.9:
-  version "2.26.9"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.26.9.tgz#4b6ce4e9044dd257d7314d8ed9b4d4d8a7d166c9"
-  integrity sha512-XIiWYLayLqV+oY4S2Lub/shJq4uk/QQLwWToYCL4LjZbYHbFK3czea4UDVRUJu+zNmKmxq5Zb/OG7c5HSvH2TQ==
+rollup@^2.26.10:
+  version "2.26.10"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.26.10.tgz#0ffe0390d35f07af850382f22f1b8525c7f57f07"
+  integrity sha512-dUnjCWOA0h9qNX6qtcHidyatz8FAFZxVxt1dbcGtKdlJkpSxGK3G9+DLCYvtZr9v94D129ij9zUhG+xbRoqepw==
   optionalDependencies:
     fsevents "~2.1.2"
 
@@ -5921,10 +5921,10 @@ supports-hyperlinks@^2.1.0:
     has-flag "^4.0.0"
     supports-color "^7.0.0"
 
-svelte-common@^2.1.7:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/svelte-common/-/svelte-common-2.2.1.tgz#3b6fc974c5eb9f6d6027c75dd6f057adecd2fe31"
-  integrity sha512-LTIpa2ZPxZa/FJMSu+nwW76d+M6wlwCwtv0Txkcv2eJCHEJIpUHKUsVg5qGTJOYFP/VPl51gTq4+fgluJGcreg==
+svelte-common@^2.2.1:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/svelte-common/-/svelte-common-2.4.0.tgz#adabff1e4641a252b6c703ea350d23261abb2f43"
+  integrity sha512-WrjHqdAXDvWOzNvYd0Jfzu/z+6zs67GGSxUlAeUw77qTR8++vm5xMql95BP/CXAKTqnmqx1VIkf5u5YIC+baIg==
 
 svelte-guard-history-router@^2.24.0:
   version "2.24.0"
