@@ -5356,7 +5356,7 @@ rollup-pluginutils@^2.8.2:
   dependencies:
     estree-walker "^0.6.1"
 
-rollup@^2.27.0:
+rollup@^2.27.1:
   version "2.27.1"
   resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.27.1.tgz#372744e1d36eba0fd942d997600c2fc2ca266305"
   integrity sha512-GiWHQvnmMgBktSpY/1+nrGpwPsTw4b9P28og2uedfeq4JZ16rzAmnQ5Pm/E0/BEmDNia1ZbY7+qu3nBgNa19Hg==
@@ -5400,10 +5400,10 @@ sax@~1.2.4:
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
 
-semantic-release@^17.1.1:
-  version "17.1.1"
-  resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-17.1.1.tgz#d9775968e841b2b7c5020559e4481aea8520ca75"
-  integrity sha512-9H+207eynBJElrQBHySZm+sIEoJeUhPA2zU4cdlY1QSInd2lnE8GRD2ALry9EassE22c9WW+aCREwBhro5AIIg==
+semantic-release@^17.1.2:
+  version "17.1.2"
+  resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-17.1.2.tgz#7d77555185722012b34e3ca74e4d13f813daf3cd"
+  integrity sha512-szYBXm10QjQO5Tb1S2PSkvOBW3MajWJat5EWtx+MzaVT/jquuxf9o+Zn8FC1j157xvJ5p9r1d/MZGslgs7oQQg==
   dependencies:
     "@semantic-release/commit-analyzer" "^8.0.0"
     "@semantic-release/error" "^2.2.0"
@@ -5921,10 +5921,10 @@ supports-hyperlinks@^2.1.0:
     has-flag "^4.0.0"
     supports-color "^7.0.0"
 
-svelte-common@^2.4.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/svelte-common/-/svelte-common-2.6.0.tgz#006e503d176099d14bbb378ee0c6b845c088f65c"
-  integrity sha512-9pOjB4vCubVvrN2HSroSc+yDHHCvtVqbrtaUujyY8baPu88QziHsQTFMJg+nUHs+WhLn91nH7/Hb5Fnsis3JSw==
+svelte-common@^2.6.0:
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/svelte-common/-/svelte-common-2.8.0.tgz#5e09bbb816da9340d13b77cc78569da14e69415b"
+  integrity sha512-SSChWct2Pzg+vsnR7y4T5kDXxLpAGMhvbSee73YwW5U5Ycr9/aleEZe6uqhEVnM1R6l6oNh6VYjRSaS4vGAeBg==
 
 svelte-guard-history-router@^2.24.0:
   version "2.24.0"
