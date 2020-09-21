@@ -23,7 +23,7 @@
   "dependencies": {
     "WiredPanels": "^2.0.0",
     "mf-styling": "arlac77/mf-styling",
-    "svelte-common": "^2.9.0",
+    "svelte-common": "^2.11.1",
     "svelte-guard-history-router": "^2.24.0",
     "svelte-session-manager": "^1.1.7"
   },
@@ -37,7 +37,7 @@
     "@semantic-release/release-notes-generator": "^9.0.1",
     "npm-pkgbuild": "^6.12.8",
     "postcss-import": "^12.0.1",
-    "rollup": "^2.27.1",
+    "rollup": "^2.28.1",
     "rollup-plugin-consts": "^1.0.2",
     "rollup-plugin-dev": "^1.1.2",
     "rollup-plugin-postcss": "^3.1.8",
