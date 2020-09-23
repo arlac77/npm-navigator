@@ -165,7 +165,7 @@
   dependencies:
     "@types/node" ">= 8"
 
-"@rollup/plugin-commonjs@^15.0.0":
+"@rollup/plugin-commonjs@^15.1.0":
   version "15.1.0"
   resolved "https://registry.yarnpkg.com/@rollup/plugin-commonjs/-/plugin-commonjs-15.1.0.tgz#1e7d076c4f1b2abf7e65248570e555defc37c238"
   integrity sha512-xCQqz4z/o0h2syQ7d9LskIMvBSH4PX5PjYdpSSvgS+pQik3WahkQVNWg3D8XJeYjZoVWnIUQYDghuEMRGrmQYQ==
@@ -3520,8 +3520,8 @@ methods@~1.1.0:
 
 mf-styling@arlac77/mf-styling:
   version "0.0.0-semantic-release"
-  uid b815c7b91df78682213e5b14df2b03e89ff9d099
-  resolved "https://codeload.github.com/arlac77/mf-styling/tar.gz/b815c7b91df78682213e5b14df2b03e89ff9d099"
+  uid db9c4544279aad2e751b3946f2ca0a8b915b5984
+  resolved "https://codeload.github.com/arlac77/mf-styling/tar.gz/db9c4544279aad2e751b3946f2ca0a8b915b5984"
 
 micromatch@^4.0.2:
   version "4.0.2"
