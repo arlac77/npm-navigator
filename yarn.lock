@@ -3520,8 +3520,8 @@ methods@~1.1.0:
 
 mf-styling@arlac77/mf-styling:
   version "0.0.0-semantic-release"
-  uid db9c4544279aad2e751b3946f2ca0a8b915b5984
-  resolved "https://codeload.github.com/arlac77/mf-styling/tar.gz/db9c4544279aad2e751b3946f2ca0a8b915b5984"
+  uid a70e32553f566f0702616b06efa8f51117d9363d
+  resolved "https://codeload.github.com/arlac77/mf-styling/tar.gz/a70e32553f566f0702616b06efa8f51117d9363d"
 
 micromatch@^4.0.2:
   version "4.0.2"
@@ -5926,7 +5926,7 @@ svelte-common@^2.11.1:
   resolved "https://registry.yarnpkg.com/svelte-common/-/svelte-common-2.11.1.tgz#faea16468b69d25a76116906d4a800ec159e1657"
   integrity sha512-Bi93mGzTyf6/WwDK4DRob7goOJSk8f7wrAIERNYHR9wXm/6nrnaKSuJJvY61Bs1aS+XzJaOaKt+pAvPA14HBwg==
 
-svelte-guard-history-router@^2.24.0:
+svelte-guard-history-router@^2.24.1:
   version "2.24.3"
   resolved "https://registry.yarnpkg.com/svelte-guard-history-router/-/svelte-guard-history-router-2.24.3.tgz#8be3d5aa39fe4672b87184449729666f56bc95f7"
   integrity sha512-W9Lgpt/C7F7Ah8t2bqPJ1VZ5XCXaZ1k5mLcxJzDXmwQGyF+WukGZ6wVhsB0765gJdTORx+LjhgjtmOmFHDmI6A==
@@ -5938,7 +5938,7 @@ svelte-session-manager@^1.1.7:
   resolved "https://registry.yarnpkg.com/svelte-session-manager/-/svelte-session-manager-1.1.7.tgz#d1dbaaeba9a24f15b4fb9044ff46c04a7eaffcf6"
   integrity sha512-oIcCrOiZK0vY0nU8ikW2c5jjVy23zzuxMxdaQdRVkNZSKOom1V/+biqrOeux80K2C3OridsKVJgni6+tEbOxpA==
 
-svelte@^3.25.1:
+svelte@^3.26.0:
   version "3.26.0"
   resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.26.0.tgz#20ae354e55689ad37d872d2ce3276aeaa9bf305d"
   integrity sha512-9tclNfffORwbSewfofEHddqXhfhFvFcgJlkF3QhZfMuoh6whPOPY87eHiJRHph4na3VxQoGDyEWAZcNAl1K/2A==
