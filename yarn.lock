@@ -3848,10 +3848,10 @@ npm-pick-manifest@^3.0.0, npm-pick-manifest@^3.0.2:
     npm-package-arg "^6.0.0"
     semver "^5.4.1"
 
-npm-pkgbuild@^6.12.8:
-  version "6.12.8"
-  resolved "https://registry.yarnpkg.com/npm-pkgbuild/-/npm-pkgbuild-6.12.8.tgz#f01b1d3f490d728edcb41e4e5e9e0b0a38cb364b"
-  integrity sha512-Hr3C3nnqpTBTWDwhmJ8zCqnly4IV+HDNspNstFQNhh67x9T6wvMKMoj9NF9r61lMGHn7rN+YV/KLty1stTIb9w==
+npm-pkgbuild@^6.12.9:
+  version "6.12.9"
+  resolved "https://registry.yarnpkg.com/npm-pkgbuild/-/npm-pkgbuild-6.12.9.tgz#38dc6c05e65f68cfb74f19632d34e9b5b22b31f0"
+  integrity sha512-15gTggkGYomf9nSXkgxIFN1Z4W1UJlXSxkLI9ir0btgs9YBs3dzzuucfytt9jhPOHdFqEMQ7J1LeUr8UOrp/Kw==
   dependencies:
     commander "^6.1.0"
     execa "^4.0.3"
@@ -5926,7 +5926,7 @@ svelte-common@^2.11.1:
   resolved "https://registry.yarnpkg.com/svelte-common/-/svelte-common-2.11.1.tgz#faea16468b69d25a76116906d4a800ec159e1657"
   integrity sha512-Bi93mGzTyf6/WwDK4DRob7goOJSk8f7wrAIERNYHR9wXm/6nrnaKSuJJvY61Bs1aS+XzJaOaKt+pAvPA14HBwg==
 
-svelte-guard-history-router@^2.24.1:
+svelte-guard-history-router@^2.24.3:
   version "2.24.3"
   resolved "https://registry.yarnpkg.com/svelte-guard-history-router/-/svelte-guard-history-router-2.24.3.tgz#8be3d5aa39fe4672b87184449729666f56bc95f7"
   integrity sha512-W9Lgpt/C7F7Ah8t2bqPJ1VZ5XCXaZ1k5mLcxJzDXmwQGyF+WukGZ6wVhsB0765gJdTORx+LjhgjtmOmFHDmI6A==
