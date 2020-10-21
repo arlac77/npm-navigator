@@ -76,10 +76,7 @@ export default [
           port,
           dirs: [dist],
           spa: `${dist}/index.html`,
-          basePath: config.base,
-          proxy: {
-            [`${config.api}/*`]: [config.proxyTarget, { https: true }]
-          }
+          basePath: config.base
         })
     ],
     external,

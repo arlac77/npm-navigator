@@ -59,10 +59,8 @@
   },
   "homepage": "https://github.com/arlac77/npm-navigator#readme",
   "config": {
-    "api": "/services/npm-navigator/api",
     "base": "/services/npm-navigator",
-    "proxyTarget": "https://somewhere/",
-    "title": "Appliction Name"
+    "title": "NPM Navigator"
   },
   "pacman": {
     "groups": "web",
