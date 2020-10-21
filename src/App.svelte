@@ -19,6 +19,7 @@
       <li>
         <Route path="/packages" component={Packages}>
           Packages
+          <Route path="/:package" component={Packages}/>
         </Route>
       </li>
     </ul>
