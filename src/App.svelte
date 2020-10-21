@@ -12,7 +12,7 @@
 <Router {base}>
   <nav>
     <Route href="/" path="*" component={Home}>
-      <img class="logo" src="logo.svg" alt="Package Navigator" />
+      <img class="logo" src="images/logo.svg" alt="Package Navigator" />
       Package Navigator
     </Route>
     <ul class="left">

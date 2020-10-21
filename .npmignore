@@ -8,7 +8,4 @@ doc
 rollup.config.*
 .travis.yml
 .vscode
-*.mjs.map
 .github
-*.css.map
-*.js.map

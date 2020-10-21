@@ -3,10 +3,5 @@ build
 *.log
 *.dump
 .DS_Store
-*.node
 .test
 .tmp
-*.css.map
-*.js.map
-*.mjs.map
-public/bundle.*
