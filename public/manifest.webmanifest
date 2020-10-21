@@ -5,7 +5,13 @@
   "start_url": "./index.html",
   "display": "standalone",
   "orientation": "portrait",
-  "icons": [],
+  "icons": [
+    {
+      "src": "images/npm.png",
+      "sizes": "512x512",
+      "purpose": "any"
+    }
+  ],
   "background_color": "#ffffff",
   "categories": []
 }
