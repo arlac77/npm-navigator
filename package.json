@@ -17,34 +17,35 @@
   ],
   "license": "BSD-2-Clause",
   "scripts": {
-    "prepare": "rollup -c",
-    "start": "rollup -c -w"
+    "prepare": "rollup -c rollup.config.mjs",
+    "start": "rollup -c -w rollup.config.mjs"
   },
   "dependencies": {
     "WiredPanels": "^2.0.0",
     "mf-styling": "arlac77/mf-styling",
-    "svelte-common": "^2.1.3",
-    "svelte-guard-history-router": "^2.23.7",
-    "svelte-session-manager": "^1.1.6"
+    "svelte-common": "^2.19.0",
+    "svelte-guard-history-router": "^3.1.1",
+    "svelte-session-manager": "^1.1.8"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-commonjs": "^15.1.0",
     "@rollup/plugin-inject": "^4.0.2",
-    "@rollup/plugin-node-resolve": "^8.4.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
     "@rollup/plugin-virtual": "^2.0.3",
     "@semantic-release/commit-analyzer": "^8.0.1",
     "@semantic-release/exec": "^5.0.0",
     "@semantic-release/release-notes-generator": "^9.0.1",
-    "npm-pkgbuild": "^6.12.1",
+    "npm-pkgbuild": "^6.12.11",
     "postcss-import": "^12.0.1",
-    "rollup": "^2.22.1",
+    "rollup": "^2.32.0",
     "rollup-plugin-consts": "^1.0.2",
     "rollup-plugin-dev": "^1.1.2",
-    "rollup-plugin-postcss": "^3.1.3",
-    "rollup-plugin-svelte": "git+https://github.com/ctavan/rollup-plugin-svelte.git#handle-missing-exports-gracefully",
-    "rollup-plugin-terser": "^6.1.0",
-    "semantic-release": "^17.1.1",
-    "svelte": "^3.24.0"
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-postcss": "^3.1.8",
+    "rollup-plugin-svelte": "^6.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "semantic-release": "^17.2.1",
+    "svelte": "^3.29.0"
   },
   "repository": {
     "type": "git",
@@ -57,7 +58,8 @@
   "config": {
     "api": "/services/npm-navigator/api",
     "base": "/services/npm-navigator",
-    "proxyTarget": "https://somewhere/"
+    "proxyTarget": "https://somewhere/",
+    "title": "Appliction Name"
   },
   "pacman": {
     "groups": "web",
@@ -70,7 +72,7 @@
     "installdir": "/services/npm-navigator/frontend",
     "hooks": "pacman/hooks.sh",
     "depends": {
-      "nginx-mainline": ">=1.19.0"
+      "nginx-mainline": ">=1.19.3"
     }
   },
   "release": {
@@ -88,6 +90,7 @@
   "template": {
     "inheritFrom": [
       "arlac77/template-arlac77-github",
+      "arlac77/template-github-action",
       "arlac77/template-svelte-app"
     ]
   }
