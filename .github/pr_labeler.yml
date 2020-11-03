@@ -1,0 +1,7 @@
+test:
+  - tests/**/*
+
+documentation:
+  - docs/**/*
+  - **/*.md
+
