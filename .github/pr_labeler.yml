@@ -1,7 +1,6 @@
 test:
-  - tests/**/*
+  - "tests/**/*"
 
 documentation:
   - docs/**/*
-  - **/*.md
-
+  - "**/*.md"
