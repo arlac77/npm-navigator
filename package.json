@@ -27,7 +27,7 @@
     "mf-styling": "arlac77/mf-styling",
     "svelte-common": "^3.0.3",
     "svelte-guard-history-router": "^4.2.1",
-    "svelte-session-manager": "^1.3.0"
+    "svelte-session-manager": "^1.3.1"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
