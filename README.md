@@ -4,7 +4,7 @@
 [![minified size](https://badgen.net/bundlephobia/min/npm-navigator)](https://bundlephobia.com/result?p=npm-navigator)
 [![downloads](http://img.shields.io/npm/dm/npm-navigator.svg?style=flat-square)](https://npmjs.org/package/npm-navigator)
 [![GitHub Issues](https://img.shields.io/github/issues/arlac77/npm-navigator.svg?style=flat-square)](https://github.com/arlac77/npm-navigator/issues)
-[![Build Action Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Farlac77%2Fnpm-navigator%2Fbadge&style=flat)](https://actions-badge.atrox.dev/arlac77/npm-navigator/goto)
+[![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Farlac77%2Fnpm-navigator%2Fbadge&style=flat)](https://actions-badge.atrox.dev/arlac77/npm-navigator/goto)
 [![Coverage Status](https://coveralls.io/repos/arlac77/npm-navigator/badge.svg)](https://coveralls.io/github/arlac77/npm-navigator)
 
 ## npm-navigator
