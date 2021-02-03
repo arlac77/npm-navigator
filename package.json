@@ -36,7 +36,7 @@
     "@semantic-release/commit-analyzer": "^8.0.1",
     "@semantic-release/exec": "^5.0.0",
     "@semantic-release/release-notes-generator": "^9.0.1",
-    "npm-pkgbuild": "^6.12.22",
+    "npm-pkgbuild": "^6.12.23",
     "postcss": "^8.2.4",
     "postcss-import": "^14.0.0",
     "rollup": "^2.38.4",
@@ -87,7 +87,9 @@
         }
       ],
       "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator"
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      "@semantic-release/github"
     ]
   },
   "template": {
