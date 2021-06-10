@@ -37,7 +37,7 @@
     "@semantic-release/exec": "^5.0.0",
     "@semantic-release/release-notes-generator": "^9.0.2",
     "npm-pkgbuild": "^6.12.31",
-    "postcss": "^8.3.0",
+    "postcss": "^8.3.1",
     "postcss-import": "^14.0.2",
     "rollup": "^2.51.1",
     "rollup-plugin-consts": "^1.0.2",
