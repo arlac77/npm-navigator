@@ -26,7 +26,7 @@
     "WiredPanels": "^2.0.0",
     "mf-styling": "arlac77/mf-styling",
     "svelte-common": "^4.4.9",
-    "svelte-guard-history-router": "^4.2.11",
+    "svelte-guard-history-router": "^4.2.12",
     "svelte-session-manager": "^1.4.5"
   },
   "devDependencies": {
@@ -47,7 +47,7 @@
     "rollup-plugin-svelte": "^7.1.0",
     "rollup-plugin-terser": "^7.0.2",
     "semantic-release": "^17.4.4",
-    "svelte": "^3.41.0",
+    "svelte": "^3.42.0",
     "testcafe": "^1.15.1"
   },
   "repository": {
