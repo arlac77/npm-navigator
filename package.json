@@ -20,7 +20,7 @@
     "prepare": "rollup -c rollup.config.mjs",
     "start": "rollup -c -w rollup.config.mjs",
     "test": "npm run test:cafe",
-    "test:cafe": "testcafe $BROWSER:headless tests/cafe/*.js -s build/test --app-init-delay 1000 --app \"rollup -c rollup.config.mjs -w\""
+    "test:cafe": "testcafe $BROWSER:headless tests/cafe/*.js -s build/test --page-request-timeout 9000 --app-init-delay 3000 --app \"rollup -c rollup.config.mjs -w\""
   },
   "dependencies": {
     "WiredPanels": "^2.0.0",
@@ -36,7 +36,7 @@
     "@semantic-release/commit-analyzer": "^8.0.1",
     "@semantic-release/exec": "^5.0.0",
     "@semantic-release/release-notes-generator": "^9.0.3",
-    "npm-pkgbuild": "^6.12.45",
+    "npm-pkgbuild": "^6.12.47",
     "postcss": "^8.3.6",
     "postcss-import": "^14.0.2",
     "rollup": "^2.56.3",
@@ -46,7 +46,7 @@
     "rollup-plugin-postcss": "^4.0.1",
     "rollup-plugin-svelte": "^7.1.0",
     "rollup-plugin-terser": "^7.0.2",
-    "semantic-release": "^17.4.6",
+    "semantic-release": "^17.4.7",
     "svelte": "^3.42.3",
     "testcafe": "^1.15.3"
   },
