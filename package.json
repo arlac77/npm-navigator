@@ -39,7 +39,7 @@
     "npm-pkgbuild": "^6.12.74",
     "postcss": "^8.4.4",
     "postcss-import": "^14.0.2",
-    "rollup": "^2.60.2",
+    "rollup": "^2.61.0",
     "rollup-plugin-consts": "^1.0.2",
     "rollup-plugin-dev": "^2.0.0",
     "rollup-plugin-livereload": "^2.0.5",
