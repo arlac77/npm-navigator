@@ -64,17 +64,16 @@
     "proxyTarget": "https://somewhere/",
     "title": "NPM Navigator"
   },
-  "pacman": {
+  "pkg": {
     "groups": "web",
     "content": {
       "${installdir}/": {
         "base": "public"
       },
-      "/etc/nginx/config.d/${name}.conf": "pacman/nginx.conf",
-      "/etc/nginx/sites/common/${name}.conf": "pacman/nginx.conf"
+      "/etc/nginx/sites/common/${name}.conf": "pkg/nginx.conf"
     },
     "installdir": "/services/npm-navigator/frontend",
-    "hooks": "pacman/hooks.sh",
+    "hooks": "pkg/hooks.sh",
     "depends": {
       "nginx-mainline": ">=1.21.4"
     }
@@ -84,7 +83,7 @@
       [
         "@semantic-release/exec",
         {
-          "publishCmd": "npx npm-pkgbuild --pkgver ${nextRelease.version} pkgbuild pacman makepkg"
+          "publishCmd": "npx npm-pkgbuild"
         }
       ],
       "@semantic-release/commit-analyzer",
