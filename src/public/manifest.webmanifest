@@ -1,0 +1,17 @@
+{
+  "name": "{{name}}",
+  "short_name": "{{name}}",
+  "description": "{{description}}",
+  "start_url": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "images/icon.svg",
+      "sizes": "150x150",
+      "purpose": "any"
+    }
+  ],
+  "background_color": "#ffffff",
+  "categories": []
+}
