@@ -9,3 +9,4 @@ rollup.config.*
 .vscode
 .github
 *.map
+pkg
