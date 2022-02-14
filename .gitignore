@@ -1,10 +1,10 @@
 build
 /node_modules/**
 *.log
+node_modules
 *.dump
 .DS_Store
 *.node
 .test
 .tmp
-bundle.*
 *.map
