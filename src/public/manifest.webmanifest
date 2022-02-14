@@ -1,0 +1,20 @@
+{
+  "name": "{{title}}",
+  "short_name": "{{title}}",
+  "description": "{{description}}",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "images/icon.svg",
+      "sizes": "150x150",
+      "purpose": "any"
+    }
+  ],
+  "background_color": "#A21CAF",
+  "categories": [
+    "productivity"
+  ],
+  "theme_color": "#A21CAF"
+}
