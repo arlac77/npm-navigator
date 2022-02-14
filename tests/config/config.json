@@ -1,0 +1,44 @@
+{
+  "database": {
+    "file": "build/db"
+  },
+  "auth": {
+    "users": {
+      "user1": {
+        "password": "secret",
+        "entitlements": [
+          "konsum",
+          "konsum.category.add",
+          "konsum.category.modify",
+          "konsum.category.delete",
+          "konsum.meter.add",
+          "konsum.meter.modify",
+          "konsum.meter.delete",
+          "konsum.note.add",
+          "konsum.note.modify",
+          "konsum.note.delete",
+          "konsum.value.add",
+          "konsum.value.delete"
+        ]
+      },
+      "user2": {
+        "password": "secret",
+        "entitlements": ["konsum"]
+      },
+      "admin1": {
+        "password": "secret",
+        "entitlements": ["konsum", "konsum.admin.backup", "konsum.admin.stop"]
+      }
+    },
+    "jwt": {
+      "options": {
+        "expiresIn": "1h"
+      },
+      "public": "${document('demo.rsa.pub')}",
+      "private": "${document('demo.rsa')}"
+    }
+  },
+  "http": {
+    "port": 5000
+  }
+}
