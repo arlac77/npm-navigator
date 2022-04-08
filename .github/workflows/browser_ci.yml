@@ -22,7 +22,7 @@ jobs:
       - run: npm test
         env:
           BROWSER: ${{ matrix.browser }}
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           path: ${{ github.workspace }}/build/test/**/*
           retention-days: 3
