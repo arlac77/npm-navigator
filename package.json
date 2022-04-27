@@ -1,54 +1,95 @@
 {
-  "name": "npm-navigator",
+  "name": "@konsumation/frontend-svelte",
   "version": "0.0.0-semantic-release",
   "publishConfig": {
     "access": "public"
   },
-  "description": "navigate npm dependencies visually",
+  "files": [
+    "src/button.css",
+    "src/card.css",
+    "src/color-primary-cyan.css",
+    "src/color-primary-fuchsia.css",
+    "src/color-primary-inigo.css",
+    "src/color-primary-lime.css",
+    "src/color-primary-rose.css",
+    "src/color-primary-teal.css",
+    "src/color.css",
+    "src/dropdown.css",
+    "src/form.css",
+    "src/global.css",
+    "src/layout.css",
+    "src/log.css",
+    "src/nav.css",
+    "src/table.css"
+  ],
+  "description": "svelte web frontend for konsum",
   "keywords": [
+    "konsum",
     "svelte",
+    "vite",
     "web"
   ],
   "contributors": [
     {
       "name": "Markus Felten",
       "email": "markus.felten@gmx.de"
+    },
+    {
+      "name": "Konstantin Karpman"
     }
   ],
   "license": "BSD-2-Clause",
   "scripts": {
-    "prepare": "rollup -c rollup.config.mjs",
-    "start": "rollup -c -w rollup.config.mjs",
-    "test": "npm run test:cafe",
-    "test:cafe": "testcafe $BROWSER:headless tests/cafe/*.js -s build/test --page-request-timeout 9000 --app-init-delay 3000 --app \"rollup -c rollup.config.mjs -w\""
+    "prepare": "vite build",
+    "start": "vite && rollup -c -w rollup.config.mjs",
+    "startkonsum": "node_modules/konsum/src/konsum-cli.mjs -c tests/config start",
+    "startfrontend": "npm run dev",
+    "test": "npm run test:ava && npm run test:cafe",
+    "test:cafe": "testcafe $BROWSER:headless tests/cafe/*.js -s build/test --page-request-timeout 9000 --app-init-delay 3000 --app \"vite\"",
+    "test:ava": "ava --timeout 2m tests/*.mjs",
+    "lint:css": "stylelint ./src/*.css",
+    "lint": "npm run lint:css",
+    "cafeHead": "testcafe chrome tests/cafe/deleteValues.js -s build/test",
+    "dev": "vite",
+    "serve": "vite preview"
   },
   "dependencies": {
     "WiredPanels": "^2.0.0",
+    "imask": "^6.4.2",
+    "layercake": "^6.1.0",
     "mf-styling": "arlac77/mf-styling",
+    "streamsaver": "^2.0.6",
+    "svelte-command": "^1.1.9",
     "svelte-common": "^4.4.33",
     "svelte-guard-history-router": "^4.6.5",
-    "svelte-session-manager": "^2.0.10"
+    "svelte-session-manager": "^2.0.10",
+    "the-new-css-reset": "^1.5.1"
   },
   "devDependencies": {
+    "@konsumation/konsum": "github:konsumation/konsum",
     "@rollup/plugin-commonjs": "^22.0.0",
     "@rollup/plugin-node-resolve": "^13.1.3",
     "@rollup/plugin-virtual": "^2.0.3",
     "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/exec": "^6.0.3",
     "@semantic-release/release-notes-generator": "^10.0.3",
-    "npm-pkgbuild": "^9.0.2",
-    "postcss": "^8.4.6",
-    "postcss-import": "^14.0.2",
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.41",
+    "ava": "^4.2.0",
+    "konsum": "github:konsumation/konsum",
+    "npm-pkgbuild": "^9.0.4",
     "rollup": "^2.67.0",
     "rollup-plugin-consts": "^1.0.2",
     "rollup-plugin-dev": "^2.0.0",
-    "rollup-plugin-livereload": "^2.0.5",
-    "rollup-plugin-postcss": "^4.0.2",
-    "rollup-plugin-svelte": "^7.1.0",
     "rollup-plugin-terser": "^7.0.2",
     "semantic-release": "^19.0.2",
-    "svelte": "^3.46.3",
-    "testcafe": "^1.18.3"
+    "stylelint": "^14.8.0",
+    "stylelint-config-standard": "^25.0.0",
+    "svelte": "^3.47.0",
+    "testcafe": "^1.18.6",
+    "vite": "^2.9.6"
+  },
+  "optionalDependencies": {
+    "mf-hosting": "github:arlac77/mf-hosting"
   },
   "repository": {
     "type": "git",
@@ -65,21 +106,36 @@
     "title": "NPM Navigator"
   },
   "pkg": {
-    "groups": "web",
     "content": {
       "${installdir}/": {
         "base": "public"
       },
-      "/etc/nginx/sites/common/${name}.conf": "pkg/nginx.conf"
+      "/etc/nginx/sites/common/${name}.conf": "pkg/nginx.conf",
+      "${install.dir}": {
+        "base": "build"
+      },
+      "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf"
     },
-    "installdir": "/services/npm-navigator/frontend",
     "hooks": "pkg/hooks.sh",
+    "groups": "web",
     "depends": {
-      "nginx-mainline": ">=1.21.4"
-    }
+      "nginx-mainline": ">=1.21.4",
+      "konsum": ">=5.0.39"
+    },
+    "http.api.path": "/services/konsum/api",
+    "http.base.path": "/services/${name}",
+    "install.dir": "/services/mf-styling/frontend/",
+    "installdir": "/services/npm-navigator/frontend",
+    "name": "konsum-frontend-svelte"
   },
   "release": {
     "plugins": [
+      [
+        "@semantic-release/exec",
+        {
+          "publishCmd": "npx npm-pkgbuild --verbose"
+        }
+      ],
       [
         "@semantic-release/exec",
         {
