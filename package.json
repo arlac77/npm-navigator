@@ -64,15 +64,15 @@
     "proxyTarget": "https://somewhere/",
     "title": "NPM Navigator"
   },
-  "pkg": {
+  "pkgbuild": {
     "groups": "web",
     "content": {
-      "${installdir}/": {
+      "${install.dir}": {
         "base": "public"
       },
-      "/etc/nginx/sites/common/${name}.conf": "pkg/nginx.conf"
+      "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf"
     },
-    "installdir": "/services/npm-navigator/frontend",
+    "install.dir": "${install.base.dir}${name}/frontend/",
     "hooks": "pkg/hooks.sh",
     "depends": {
       "nginx-mainline": ">=1.21.4"
@@ -80,15 +80,15 @@
   },
   "release": {
     "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
       [
         "@semantic-release/exec",
         {
           "publishCmd": "npx npm-pkgbuild"
         }
       ],
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      "@semantic-release/npm",
       "@semantic-release/github"
     ]
   },
