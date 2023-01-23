@@ -7,8 +7,6 @@ jobs:
       matrix:
         os:
           - ubuntu-latest
-        node:
-          - 18.11.0
         browser:
           - chrome
           - firefox
