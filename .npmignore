@@ -9,3 +9,6 @@ rollup.config.*
 .vscode
 .github
 *.map
+.stylelintrc.json
+pkg
+dist
