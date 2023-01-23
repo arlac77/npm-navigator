@@ -1,7 +1,8 @@
-@import "mf-styling/global.css";
-@import "mf-styling/nav.css";
-@import "mf-styling/dropdown.css";
-@import "mf-styling/table.css";
-@import "mf-styling/button.css";
-@import "mf-styling/form.css";
-@import "mf-styling/card.css";
+@import url("mf-styling/src/color-primary-fuchsia.css");
+@import url("mf-styling/src/color.css");
+@import url("mf-styling/src/global.css");
+@import url("mf-styling/src/layout.css");
+@import url("mf-styling/src/nav.css");
+@import url("mf-styling/src/dropdown.css");
+@import url("mf-styling/src/button.css");
+@import url("mf-styling/src/form.css");

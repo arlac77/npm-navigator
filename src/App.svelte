@@ -1,6 +1,5 @@
 <script>
-  import * as style from "./main.css";
-  import base from 'consts:base';
+  import { base } from "./constants.mjs";
   import { Router, Route, Outlet } from "svelte-guard-history-router";
   import { TopNav } from "svelte-common";
   import About from "./pages/About.svelte";

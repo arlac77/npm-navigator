@@ -1,8 +1,6 @@
 <script>
   import { About, ApplicationDetails } from "svelte-common";
-  import version from "consts:version";
-  import description from "consts:description";
-  import name from "consts:name";
+  import { version, description, name } from "../constants.mjs";
 </script>
 
 <About>

@@ -27,11 +27,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "WiredPanels": "^2.0.0",
     "mf-styling": "^1.7.36",
     "svelte-common": "^4.21.19",
     "svelte-guard-history-router": "^5.5.23",
-    "svelte-session-manager": "^2.0.11"
+    "svelte-session-manager": "^2.0.11",
+    "WiredPanels": "^2.0.0"
   },
   "devDependencies": {
     "@semantic-release/commit-analyzer": "^9.0.2",
@@ -58,6 +58,7 @@
     "content": {
       "${install.dir}": "build/"
     },
+    "frontend": true,
     "title": "NPM Navigator"
   },
   "release": {
@@ -115,5 +116,8 @@
       "arlac77/template-svelte-app",
       "arlac77/template-testcafe"
     ]
+  },
+  "optionalDependencies": {
+    "mf-hosting-frontend": "^1.4.2"
   }
 }
