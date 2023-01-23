@@ -1,6 +1,6 @@
 import { Selector } from "testcafe";
 
-const base = "http://localhost:5000/services/npm-navigator";
+const base = "http://localhost:4173/services/npm-navigator";
 
 fixture`overview`.page`${base}/index.html`;
 
