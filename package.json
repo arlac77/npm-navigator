@@ -27,7 +27,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "mf-styling": "^1.7.36",
+    "mf-styling": "^1.7.37",
     "svelte-common": "^4.21.20",
     "svelte-guard-history-router": "^5.5.23",
     "svelte-session-manager": "^2.0.11",
