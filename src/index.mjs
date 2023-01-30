@@ -1,8 +1,5 @@
 import WiredPanels from 'WiredPanels';
 import { loadModule } from './util.mjs';
-import './main.css';
-import 'WiredPanels/WiredPanels.css';
-import 'WiredPanels/Colors/Neon.css';
 
 const wiredPanels = new WiredPanels(
   document.getElementById('graph'),
