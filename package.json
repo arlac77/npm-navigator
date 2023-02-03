@@ -30,7 +30,7 @@
     "mf-styling": "^1.7.43",
     "svelte-common": "^4.22.4",
     "svelte-guard-history-router": "^5.5.28",
-    "svelte-session-manager": "^2.1.0",
+    "svelte-session-manager": "^2.1.1",
     "WiredPanels": "^2.0.0"
   },
   "devDependencies": {
