@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "mf-styling": "^1.7.43",
-    "svelte-common": "^4.22.6",
+    "svelte-common": "^4.22.7",
     "svelte-guard-history-router": "^5.5.28",
     "svelte-session-manager": "^2.1.3",
     "WiredPanels": "^2.0.0"
