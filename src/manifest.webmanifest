@@ -12,8 +12,8 @@
       "purpose": "any"
     },
     {
-      "src": "images/icon.svg",
-      "sizes": "150x150",
+      "src": "images/npm.svg",
+      "sizes": "480x480",
       "purpose": "any"
     }
   ],

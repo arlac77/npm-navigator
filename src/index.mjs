@@ -29,4 +29,4 @@ wiredPanels.svg.ondblclick = async event => {
   panel.y = mousePos[1];
 };
 
-loadModule(wiredPanels, 'kronos-cluster-node', 'latest', 1);
+loadModule(wiredPanels, '@kronos-integration/cluster-node', 'latest', 1);
