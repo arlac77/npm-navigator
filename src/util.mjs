@@ -3,6 +3,8 @@
  */
 const allModules = new Map();
 
+const registryBase = "https://registry.npmjs.org/";
+
 /**
  * Load and cache a module
  * @param {string} id
@@ -16,7 +18,7 @@ export async function loadModule(wiredPanels, id, version, depth) {
     return old;
   }
 
-  const result = await fetch(`https://registry.npmjs.org/${id}`);
+  const result = await fetch(`${registryBase}${id}`);
   const module = await addModule(
     wiredPanels,
     await result.json(),
