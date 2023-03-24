@@ -32,12 +32,12 @@ export async function loadModule(wiredPanels, id, version, depth) {
 export async function addModule(
   wiredPanels,
   module,
-  version = 'latest',
+  version = "latest",
   depth = 1
 ) {
-  version = version.replace(/^\^/, '');
+  version = version.replace(/^\^/, "");
 
-  const t = module['dist-tags'][version];
+  const t = module["dist-tags"][version];
   const latest = (t && module.versions[t]) || module.versions[version];
 
   const panel = wiredPanels.createPanel();
@@ -50,7 +50,7 @@ export async function addModule(
 
   const socket = wiredPanels.createSocket();
   socket.panel = panel;
-  socket.orientation = 'top';
+  socket.orientation = "top";
   sockets.push(socket);
 
   if (latest && latest.dependencies !== undefined) {
@@ -58,14 +58,14 @@ export async function addModule(
       Object.keys(latest.dependencies).map(async d => {
         const socket = wiredPanels.createSocket();
         socket.panel = panel;
-        socket.orientation = 'left';
+        socket.orientation = "left";
         socket.label.textContent = `${d}@${latest.dependencies[d]}`;
         sockets.push(socket);
 
         if (depth > 0) {
           const v = latest.dependencies[d];
           const p2 = await loadModule(d, v, depth - 1);
-          const s2 = p2.sockets.filter(s => s.orientation === 'top')[0];
+          const s2 = p2.sockets.filter(s => s.orientation === "top")[0];
 
           const wire = wiredPanels.createWire();
           wire.srcSocket = socket;

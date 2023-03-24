@@ -27,6 +27,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "browser-stream-tar": "^1.1.9",
     "mf-styling": "^1.7.49",
     "svelte-common": "^4.22.11",
     "svelte-guard-history-router": "^5.5.29",
