@@ -5,7 +5,7 @@
   import About from "./pages/About.svelte";
   import Home from "./pages/Home.svelte";
   import Packages from "./pages/Packages.svelte";
-
+  import Package from "./pages/Package.svelte";
 </script>
 
 <Router {base}>
@@ -16,9 +16,9 @@
     </Route>
     <ul class="left">
       <li>
-        <Route path="/packages" component={Packages}>
+        <Route path="/package" component={Packages}>
           Packages
-          <Route path="/:package" component={Packages}/>
+          <Route path="/:package" component={Package} />
         </Route>
       </li>
     </ul>

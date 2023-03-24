@@ -53,7 +53,7 @@ export async function addModule(
   socket.orientation = "top";
   sockets.push(socket);
 
-  if (latest && latest.dependencies !== undefined) {
+  if (latest?.dependencies !== undefined) {
     await Promise.all(
       Object.keys(latest.dependencies).map(async d => {
         const socket = wiredPanels.createSocket();
