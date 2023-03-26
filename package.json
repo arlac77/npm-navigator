@@ -60,7 +60,8 @@
       "${install.dir}": "build/"
     },
     "frontend": true,
-    "title": "NPM Navigator"
+    "title": "NPM Navigator",
+    "csp.connect-src": "connect-src 'self' https://registry.npmjs.org/;"
   },
   "release": {
     "plugins": [
