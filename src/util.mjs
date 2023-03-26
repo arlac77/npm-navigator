@@ -18,7 +18,7 @@ export async function loadModule(wiredPanels, id, version, depth) {
     return old;
   }
 
-  const result = await fetch(`${registryBase}${id}`, { mode: "no-cors" });
+  const result = await fetch(`${registryBase}${id}`);
   const module = await addModule(
     wiredPanels,
     await result.json(),
