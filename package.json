@@ -120,6 +120,6 @@
     ]
   },
   "optionalDependencies": {
-    "mf-hosting-frontend": "^1.7.1"
+    "mf-hosting-frontend": "^1.7.3"
   }
 }
