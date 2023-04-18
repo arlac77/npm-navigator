@@ -28,10 +28,10 @@
   },
   "dependencies": {
     "browser-stream-tar": "^1.1.9",
-    "mf-styling": "^1.7.52",
-    "svelte-common": "^4.22.13",
-    "svelte-guard-history-router": "^5.5.31",
-    "svelte-session-manager": "^2.2.1",
+    "mf-styling": "^1.7.53",
+    "svelte-common": "^4.22.14",
+    "svelte-guard-history-router": "^5.5.32",
+    "svelte-session-manager": "^2.2.2",
     "WiredPanels": "^2.0.0"
   },
   "devDependencies": {
