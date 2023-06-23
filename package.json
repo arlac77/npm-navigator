@@ -30,7 +30,7 @@
     "browser-stream-tar": "^1.1.9",
     "mf-styling": "^1.7.59",
     "svelte-common": "^4.22.22",
-    "svelte-guard-history-router": "^5.5.36",
+    "svelte-guard-history-router": "^5.5.37",
     "svelte-session-manager": "^2.2.6",
     "WiredPanels": "^2.0.0"
   },
