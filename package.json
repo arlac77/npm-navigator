@@ -29,7 +29,7 @@
   "dependencies": {
     "browser-stream-tar": "^1.1.9",
     "mf-styling": "^1.8.1",
-    "svelte-common": "^5.0.0",
+    "svelte-common": "^5.0.1",
     "svelte-guard-history-router": "^5.5.37",
     "svelte-session-manager": "^2.2.6",
     "WiredPanels": "^2.0.0"
