@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "browser-stream-tar": "^1.1.9",
-    "mf-styling": "^1.8.1",
+    "mf-styling": "^2.0.0",
     "svelte-common": "^5.0.2",
     "svelte-guard-history-router": "^5.5.37",
     "svelte-session-manager": "^2.2.6",
