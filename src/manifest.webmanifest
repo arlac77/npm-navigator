@@ -2,7 +2,7 @@
   "name": "{{name}}",
   "short_name": "{{name}}",
   "description": "{{description}}",
-  "start_url": "./index.html",
+  "start_url": "{{http.path}}/index.html",
   "display": "standalone",
   "orientation": "portrait",
   "icons": [
