@@ -29,8 +29,8 @@
   "dependencies": {
     "browser-stream-tar": "^1.1.9",
     "mf-styling": "^3.0.2",
-    "svelte-common": "^6.4.5",
-    "svelte-guard-history-router": "^5.5.40",
+    "svelte-common": "^6.4.6",
+    "svelte-guard-history-router": "^6.0.0",
     "svelte-session-manager": "^2.2.11",
     "WiredPanels": "^2.0.0"
   },
