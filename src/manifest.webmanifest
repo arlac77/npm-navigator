@@ -15,11 +15,6 @@
       "src": "images/npm.svg",
       "sizes": "480x480",
       "purpose": "any"
-    },
-    {
-      "src": "images/icon.svg",
-      "sizes": "150x150",
-      "purpose": "any"
     }
   ],
   "background_color": "#ffffff",
