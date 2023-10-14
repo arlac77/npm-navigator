@@ -30,7 +30,7 @@
     "WiredPanels": "^2.0.0",
     "browser-stream-tar": "^1.1.9",
     "mf-styling": "^3.0.6",
-    "svelte-common": "^6.8.4",
+    "svelte-common": "^6.8.5",
     "svelte-guard-history-router": "^6.0.6",
     "svelte-session-manager": "^2.2.13",
     "vite-plugin-compression2": "^0.10.5"
