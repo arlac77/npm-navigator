@@ -9,19 +9,23 @@ jobs:
       matrix:
         node-version:
           - 20.10.0
+        browser:
+          - chrome
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4.0.1
         with:
           node-version: ${{ matrix.node-version }}
       - run: rm package-lock.json
       - run: npm install-test
+        env:
+          BROWSER: ${{ matrix.browser }}
       - uses: gr2m/create-or-update-pull-request-action@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           path: package-lock.json
-          title: update package lock
+          title: Regenerate package lock
           body: bring lock in sync
           branch: package-lock
           labels: npm
