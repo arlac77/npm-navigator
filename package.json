@@ -2,7 +2,8 @@
   "name": "npm-navigator",
   "version": "0.0.0-semantic-release",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "description": "navigate npm dependencies visually",
   "keywords": [
