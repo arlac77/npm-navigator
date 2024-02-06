@@ -42,7 +42,7 @@
     "@semantic-release/release-notes-generator": "^12.1.0",
     "@sveltejs/vite-plugin-svelte": "^3.0.2",
     "npm-pkgbuild": "^13.0.20",
-    "semantic-release": "^23.0.0",
+    "semantic-release": "^23.0.1",
     "stylelint": "^16.2.1",
     "stylelint-config-standard": "^36.0.0",
     "svelte": "^4.2.10",
