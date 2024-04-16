@@ -42,13 +42,13 @@
     "@semantic-release/exec": "^6.0.3",
     "@semantic-release/release-notes-generator": "^13.0.0",
     "@sveltejs/vite-plugin-svelte": "^3.1.0",
-    "npm-pkgbuild": "^15.2.4",
+    "npm-pkgbuild": "^15.2.5",
     "semantic-release": "^23.0.8",
     "stylelint": "^16.3.1",
     "stylelint-config-standard": "^36.0.0",
     "svelte": "^4.2.14",
     "testcafe": "^3.5.0",
-    "vite": "^5.2.8"
+    "vite": "^5.2.9"
   },
   "optionalDependencies": {
     "mf-hosting-frontend": "^3.0.2"
