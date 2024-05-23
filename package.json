@@ -34,7 +34,7 @@
     "mf-styling": "^3.1.6",
     "svelte-common": "^6.10.16",
     "svelte-guard-history-router": "^6.1.0",
-    "svelte-session-manager": "^2.2.18",
+    "svelte-session-manager": "^2.2.19",
     "vite-plugin-compression2": "^1.1.1"
   },
   "devDependencies": {
