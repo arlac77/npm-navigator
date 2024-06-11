@@ -47,8 +47,8 @@
     "semantic-release": "^24.0.0",
     "stylelint": "^16.6.1",
     "stylelint-config-standard": "^36.0.0",
-    "svelte": "^5.0.0-next.151",
-    "testcafe": "^3.6.0",
+    "svelte": "^5.0.0-next.153",
+    "testcafe": "^3.6.1",
     "vite": "^5.2.13"
   },
   "optionalDependencies": {
