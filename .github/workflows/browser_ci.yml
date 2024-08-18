@@ -34,6 +34,12 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: npm
           cache-dependency-path: package-lock.json
+      - name: prepare node
+        uses: actions/setup-node@v4.0.3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: npm
+          cache-dependency-path: package-lock.json
       - run: npm cit
         env:
           BROWSER: ${{ matrix.browser }}
@@ -51,6 +57,8 @@ jobs:
       - run: npm ci
       - run: npm run build --if-present
       - run: npm run cover --if-present
+      - name: checkout
+        uses: actions/checkout@v4.1.7
   release:
     needs:
       - test
@@ -85,6 +93,24 @@ jobs:
           cache-dependency-path: package-lock.json
       - run: npm ci
       - run: npx semantic-release
+        env:
+          CI: "true"
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PKGBUILD_PUBLISH: ${{ secrets.PKGBUILD_PUBLISH }}
+          PKGEXT: .pkg.tar.xz
+      - name: checkout
+        uses: actions/checkout@v4.1.7
+      - name: prepare node
+        uses: actions/setup-node@v4.0.3
+        with:
+          node-version: 22.6.0
+          cache: npm
+          cache-dependency-path: package-lock.json
+      - name: install
+        run: npm ci
+      - name: release
+        run: npx semantic-release
         env:
           CI: "true"
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
