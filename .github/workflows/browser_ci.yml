@@ -44,7 +44,7 @@ jobs:
           path: ${{ github.workspace }}/build/test/**/*
           retention-days: 3
         if: always()
-      - name: Build / Test Node ${{ matrix.node-version }}
+      - prepare node
         uses: actions/setup-node@v4.0.3
         with:
           node-version: ${{ matrix.node-version }}
