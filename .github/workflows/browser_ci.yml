@@ -52,6 +52,23 @@ jobs:
       - run: npm ci
       - run: npm run build --if-present
       - run: npm run cover --if-present
+      - name: prepare node
+        uses: actions/setup-node@v4.0.3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: npm
+          cache-dependency-path: package-lock.json
+      - name: npm install
+        run: npm cit
+        env:
+          BROWSER: ${{ matrix.browser }}
+      - name: upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: screenshots-${{ matrix.browser }}
+          path: ${{ github.workspace }}/build/test/**/*
+          retention-days: 3
+        if: always()
   release:
     needs:
       - test
@@ -86,6 +103,8 @@ jobs:
           cache: npm
           cache-dependency-path: package-lock.json
       - run: npm ci
+      - name: install
+        run: npm ci
       - name: release
         run: npx semantic-release
         env:
@@ -94,3 +113,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PKGBUILD_PUBLISH: ${{ secrets.PKGBUILD_PUBLISH }}
           PKGEXT: .pkg.tar.xz
+      - name: prepare node
+        uses: actions/setup-node@v4.0.3
+        with:
+          node-version: 22.6.0
+          cache: npm
+          cache-dependency-path: package-lock.json
