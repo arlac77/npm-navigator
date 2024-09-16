@@ -47,9 +47,9 @@
     "semantic-release": "^24.1.1",
     "stylelint": "^16.9.0",
     "stylelint-config-standard": "^36.0.1",
-    "svelte": "^5.0.0-next.246",
+    "svelte": "^5.0.0-next.247",
     "testcafe": "^3.6.2",
-    "vite": "^5.4.5"
+    "vite": "^5.4.6"
   },
   "optionalDependencies": {
     "mf-hosting-frontend": "^3.2.4"
