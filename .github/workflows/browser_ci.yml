@@ -30,7 +30,7 @@ jobs:
           firefox-version: ${{ matrix.firefox }}
       - name: checkout
         uses: actions/checkout@v4.1.7
-      - uses: actions/setup-node@v4.0.3
+      - uses: actions/setup-node@v4.0.4
         with:
           node-version: ${{ matrix.node-version }}
           cache: npm
@@ -45,7 +45,7 @@ jobs:
           retention-days: 3
         if: always()
       - name: prepare node
-        uses: actions/setup-node@v4.0.3
+        uses: actions/setup-node@v4.0.4
         with:
           node-version: ${{ matrix.node-version }}
           cache: npm
@@ -92,7 +92,7 @@ jobs:
           fi
       - name: checkout
         uses: actions/checkout@v4.1.7
-      - uses: actions/setup-node@v4.0.3
+      - uses: actions/setup-node@v4.0.4
         with:
           node-version: 22.7.0
           cache: npm
@@ -109,7 +109,7 @@ jobs:
           PKGBUILD_PUBLISH: ${{ secrets.PKGBUILD_PUBLISH }}
           PKGEXT: .pkg.tar.xz
       - name: prepare node
-        uses: actions/setup-node@v4.0.3
+        uses: actions/setup-node@v4.0.4
         with:
           node-version: 22.9.0
           cache: npm
