@@ -31,8 +31,8 @@
   "dependencies": {
     "WiredPanels": "^2.0.0",
     "browser-stream-tar": "^3.0.1",
-    "mf-styling": "^3.2.1",
-    "svelte-common": "^6.15.17",
+    "mf-styling": "^3.2.3",
+    "svelte-common": "^6.15.18",
     "svelte-guard-history-router": "^6.1.2",
     "svelte-session-manager": "^3.0.5",
     "vite-plugin-compression2": "^1.3.0"
