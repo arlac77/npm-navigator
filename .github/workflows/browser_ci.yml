@@ -32,7 +32,7 @@ jobs:
           cache: npm
           cache-dependency-path: 'package-lock.json'
       - name: npm install
-        run: npm cit
+        run: npm ci
         env:
           BROWSER: ${{ matrix.browser }}
       - name: upload artifacts
