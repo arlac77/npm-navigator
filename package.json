@@ -42,7 +42,7 @@
     "@semantic-release/exec": "^6.0.3",
     "@semantic-release/github": "^11.0.1",
     "@semantic-release/release-notes-generator": "^14.0.1",
-    "@sveltejs/vite-plugin-svelte": "^4.0.0",
+    "@sveltejs/vite-plugin-svelte": "^4.0.1",
     "npm-pkgbuild": "^15.6.6",
     "semantic-release": "^24.2.0",
     "stylelint": "^16.10.0",
