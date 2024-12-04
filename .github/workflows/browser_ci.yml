@@ -17,8 +17,7 @@ jobs:
         os:
           - ubuntu-latest
         node-version:
-          - 22.10.0
-          - 22.11.0
+          - 22.12.0
         browser:
           - chrome
     steps:
@@ -65,7 +64,7 @@ jobs:
       - name: prepare node
         uses: actions/setup-node@v4.1.0
         with:
-          node-version: 22.11.0
+          node-version: 22.12.0
           cache: npm
           cache-dependency-path: package-lock.json
       - name: install
