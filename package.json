@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "WiredPanels": "^2.0.0",
-    "browser-stream-tar": "^3.0.1",
+    "browser-stream-tar": "^3.0.4",
     "mf-styling": "^3.2.12",
     "svelte-common": "^6.19.3",
     "svelte-guard-history-router": "^6.1.2",
