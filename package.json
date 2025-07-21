@@ -43,11 +43,11 @@
     "@semantic-release/github": "^11.0.3",
     "@semantic-release/release-notes-generator": "^14.0.3",
     "@sveltejs/vite-plugin-svelte": "^6.1.0",
-    "npm-pkgbuild": "^18.2.12",
+    "npm-pkgbuild": "^18.2.14",
     "semantic-release": "^24.2.7",
     "stylelint": "^16.22.0",
     "stylelint-config-standard": "^38.0.0",
-    "svelte": "^5.36.5",
+    "svelte": "^5.36.13",
     "testcafe": "^3.7.2",
     "vite": "^7.0.5"
   },
