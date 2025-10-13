@@ -36,7 +36,7 @@
     "svelte-common": "^6.19.33",
     "svelte-guard-history-router": "^6.1.2",
     "svelte-session-manager": "^3.0.52",
-    "vite-plugin-compression2": "^2.2.1"
+    "vite-plugin-compression2": "^2.3.0"
   },
   "devDependencies": {
     "@semantic-release/commit-analyzer": "^13.0.1",
