@@ -45,10 +45,10 @@
     "@semantic-release/release-notes-generator": "^14.1.0",
     "@sveltejs/vite-plugin-svelte": "^6.2.1",
     "npm-pkgbuild": "^18.3.10",
-    "semantic-release": "^24.2.9",
+    "semantic-release": "^25.0.0",
     "stylelint": "^16.25.0",
     "stylelint-config-standard": "^39.0.1",
-    "svelte": "^5.40.0",
+    "svelte": "^5.40.1",
     "testcafe": "^3.7.2",
     "vite": "^7.1.10"
   },
