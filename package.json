@@ -48,7 +48,7 @@
     "semantic-release": "^25.0.2",
     "stylelint": "^16.26.0",
     "stylelint-config-standard": "^39.0.1",
-    "svelte": "^5.44.0",
+    "svelte": "^5.45.2",
     "testcafe": "^3.7.2",
     "vite": "^7.2.4"
   },
@@ -62,7 +62,7 @@
   "bugs": {
     "url": "https://github.com/arlac77/npm-navigator/issues"
   },
-  "homepage": "https://github.com/arlac77/npm-navigator#readme",
+  "homepage": "",
   "pkgbuild": {
     "content": {
       "${install.dir}": "build/"
