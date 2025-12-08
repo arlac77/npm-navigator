@@ -26,7 +26,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: npm
-          cache-dependency-path: package-lock.json
       - name: install
         run: npm ci
       - name: test and coverage
@@ -55,7 +54,6 @@ jobs:
         with:
           node-version: 22.17.1
           cache: npm
-          cache-dependency-path: package-lock.json
       - name: install
         run: npm ci
       - name: release
