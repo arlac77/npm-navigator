@@ -35,7 +35,7 @@
     "mf-styling": "^3.2.20",
     "svelte-common": "^6.19.34",
     "svelte-guard-history-router": "^6.1.2",
-    "svelte-session-manager": "^3.0.55",
+    "svelte-session-manager": "^3.0.56",
     "vite-plugin-compression2": "^2.4.0"
   },
   "devDependencies": {
@@ -44,7 +44,7 @@
     "@semantic-release/github": "^12.0.2",
     "@semantic-release/release-notes-generator": "^14.1.0",
     "@sveltejs/vite-plugin-svelte": "^6.2.1",
-    "npm-pkgbuild": "^19.0.8",
+    "npm-pkgbuild": "^19.1.0",
     "semantic-release": "^25.0.2",
     "stylelint": "^16.26.1",
     "stylelint-config-standard": "^39.0.1",
