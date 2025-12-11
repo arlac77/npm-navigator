@@ -9,6 +9,7 @@ rollup.config.*
 .vscode
 .github
 *.map
+vite.config.mts
 .stylelintrc.json
 pkg
 dist
