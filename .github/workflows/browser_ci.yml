@@ -19,6 +19,7 @@ jobs:
           - ubuntu-latest
         node-version:
           - 24.11.1
+          - 24.12.0
         browser:
           - chrome
     steps:
@@ -54,7 +55,7 @@ jobs:
       - name: prepare node
         uses: actions/setup-node@v6.1.0
         with:
-          node-version: 24.11.1
+          node-version: 24.12.0
       - name: install
         run: npm ci
       - name: install dependencies
