@@ -34,7 +34,7 @@ jobs:
         env:
           BROWSER: ${{ matrix.browser }}
       - name: upload artifacts
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: screenshots-${{ matrix.browser }}
           path: ${{ github.workspace }}/build/test/**/*
