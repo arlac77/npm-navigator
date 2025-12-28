@@ -9,7 +9,14 @@ rollup.config.*
 .vscode
 .github
 *.map
+playwright.config.js
 vite.config.mts
 .stylelintrc.json
 pkg
 dist
+.last-run.json
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
