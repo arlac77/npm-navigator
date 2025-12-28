@@ -23,6 +23,8 @@
     "prepare": "node --run prepare:vite",
     "prepare:vite": "vite build",
     "start": "vite",
+    "test": "node --run test:playwright",
+    "test:playwright": "npx playwright test",
     "lint": "node --run lint:css",
     "lint:css": "stylelint ./src**/*.css",
     "preview": "vite preview"
@@ -37,16 +39,18 @@
     "vite-plugin-compression2": "^2.4.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.57.0",
     "@semantic-release/commit-analyzer": "^13.0.1",
     "@semantic-release/exec": "^7.1.0",
     "@semantic-release/github": "^12.0.2",
     "@semantic-release/release-notes-generator": "^14.1.0",
     "@sveltejs/vite-plugin-svelte": "^6.2.1",
     "npm-pkgbuild": "^19.1.2",
+    "playwright": "^1.57.0",
     "semantic-release": "^25.0.2",
     "stylelint": "^16.26.1",
     "stylelint-config-standard": "^39.0.1",
-    "svelte": "^5.46.0",
+    "svelte": "^5.46.1",
     "vite": "^7.3.0"
   },
   "optionalDependencies": {
@@ -120,6 +124,7 @@
     "inheritFrom": [
       "arlac77/template-arlac77-github",
       "arlac77/template-npm-pkgbuild",
+      "arlac77/template-playwright",
       "arlac77/template-svelte-app"
     ]
   }
