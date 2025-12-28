@@ -23,8 +23,6 @@
     "prepare": "node --run prepare:vite",
     "prepare:vite": "vite build",
     "start": "vite",
-    "test": "node --run test:cafe",
-    "test:cafe": "testcafe $BROWSER:headless tests/cafe/*-cafe.mjs --esm -s build/test --page-request-timeout 5000 --app-init-delay 8000 --app vite",
     "lint": "node --run lint:css",
     "lint:css": "stylelint ./src**/*.css",
     "preview": "vite preview"
@@ -49,7 +47,6 @@
     "stylelint": "^16.26.1",
     "stylelint-config-standard": "^39.0.1",
     "svelte": "^5.46.0",
-    "testcafe": "^3.7.2",
     "vite": "^7.3.0"
   },
   "optionalDependencies": {
@@ -123,8 +120,7 @@
     "inheritFrom": [
       "arlac77/template-arlac77-github",
       "arlac77/template-npm-pkgbuild",
-      "arlac77/template-svelte-app",
-      "arlac77/template-testcafe"
+      "arlac77/template-svelte-app"
     ]
   }
 }
