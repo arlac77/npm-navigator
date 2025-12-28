@@ -5,7 +5,7 @@
 [![downloads](http://img.shields.io/npm/dm/npm-navigator.svg?style=flat-square)](https://npmjs.org/package/npm-navigator)
 [![GitHub Issues](https://img.shields.io/github/issues/arlac77/npm-navigator.svg?style=flat-square)](https://github.com/arlac77/npm-navigator/issues)
 [![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Farlac77%2Fnpm-navigator%2Fbadge\&style=flat)](https://actions-badge.atrox.dev/arlac77/npm-navigator/goto)
-[![Tested with TestCafe](https://img.shields.io/badge/tested%20with-TestCafe-2fa4cf.svg)](https://github.com/DevExpress/testcafe)
+[![Tested with playwright](https://img.shields.io/badge/tested%20with-playwright-2fa4cf.svg)](https://playwright.dev)
 
 ## npm-navigator
 
