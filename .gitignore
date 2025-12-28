@@ -5,8 +5,14 @@ bun.lockb
 *.dump
 .DS_Store
 *.node
+/playwright/.auth/
 .test
 .tmp
 bundle.*
 *.map
 dist
+.last-run.json
+/playwright-report/
+/test-results/
+/blob-report/
+/playwright/.cache/
