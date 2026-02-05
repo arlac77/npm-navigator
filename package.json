@@ -66,9 +66,9 @@
   "homepage": "https://github.com/arlac77/npm-navigator#readme",
   "pkgbuild": {
     "content": {
-      "${install.dir}": "build/"
+      "${install_dir}": "build/"
     },
-    "csp.connect-src": "connect-src 'self' https://registry.npmjs.org/;",
+    "csp_connect_src": "connect-src 'self' https://registry.npmjs.org/;",
     "frontend": true,
     "title": "NPM Navigator"
   },
