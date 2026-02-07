@@ -32,7 +32,7 @@
   "dependencies": {
     "WiredPanels": "^2.0.0",
     "browser-stream-tar": "^3.0.4",
-    "mf-styling": "^3.3.5",
+    "mf-styling": "^3.3.7",
     "svelte-common": "^6.19.68",
     "svelte-guard-history-router": "^7.0.13",
     "svelte-session-manager": "^3.0.79",
@@ -54,7 +54,7 @@
     "vite": "^7.3.1"
   },
   "optionalDependencies": {
-    "mf-hosting-frontend": "^4.0.0"
+    "mf-hosting-frontend": "^4.0.2"
   },
   "repository": {
     "type": "git",
