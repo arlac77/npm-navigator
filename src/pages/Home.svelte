@@ -36,4 +36,5 @@
   });
 </script>
 
-<div id="graph" />
+<div id="graph">
+</div>
