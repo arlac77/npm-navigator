@@ -70,6 +70,7 @@
     },
     "csp_connect_src": "connect-src 'self' https://registry.npmjs.org/;",
     "frontend": true,
+    "example": true,
     "title": "NPM Navigator"
   },
   "release": {
