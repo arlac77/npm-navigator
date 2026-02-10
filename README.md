@@ -1,7 +1,6 @@
 [![Svelte v5](https://img.shields.io/badge/svelte-v5-orange.svg)](https://svelte.dev)
 [![npm](https://img.shields.io/npm/v/npm-navigator.svg)](https://www.npmjs.com/package/npm-navigator)
 [![License](https://img.shields.io/badge/License-0BSD-blue.svg)](https://spdx.org/licenses/0BSD.html)
-[![install size](https://packagephobia.now.sh/badge?p=npm-navigator/@2.2.0)](https://packagephobia.now.sh/result?p=npm-navigator@2.2.0)
 [![bundlejs](https://deno.bundlejs.com/?q=npm-navigator\&badge=detailed)](https://bundlejs.com/?q=npm-navigator)
 [![downloads](http://img.shields.io/npm/dm/npm-navigator.svg?style=flat-square)](https://npmjs.org/package/npm-navigator)
 [![GitHub Issues](https://img.shields.io/github/issues/arlac77/npm-navigator.svg?style=flat-square)](https://github.com/arlac77/npm-navigator/issues)
