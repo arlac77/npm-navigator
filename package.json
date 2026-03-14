@@ -32,7 +32,7 @@
   "dependencies": {
     "WiredPanels": "^2.0.0",
     "browser-stream-tar": "^3.0.4",
-    "mf-styling": "^3.3.11",
+    "mf-styling": "^3.3.12",
     "svelte-common": "^6.19.79",
     "svelte-guard-history-router": "^7.0.18",
     "svelte-session-manager": "^3.0.84",
