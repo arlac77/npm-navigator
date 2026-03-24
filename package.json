@@ -34,8 +34,8 @@
     "browser-stream-tar": "^3.0.4",
     "mf-styling": "^3.3.13",
     "svelte-common": "^6.19.80",
-    "svelte-guard-history-router": "^7.0.19",
-    "svelte-session-manager": "^3.0.85",
+    "svelte-guard-history-router": "^7.0.20",
+    "svelte-session-manager": "^3.0.86",
     "vite-plugin-compression2": "^2.5.3"
   },
   "devDependencies": {
