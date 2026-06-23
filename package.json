@@ -39,19 +39,19 @@
     "vite-plugin-compression2": "^2.5.3"
   },
   "devDependencies": {
-    "@playwright/test": "^1.61.0",
+    "@playwright/test": "^1.61.1",
     "@semantic-release/commit-analyzer": "^13.0.1",
     "@semantic-release/exec": "^7.1.0",
     "@semantic-release/github": "^12.0.8",
     "@semantic-release/release-notes-generator": "^14.1.1",
     "@sveltejs/vite-plugin-svelte": "^7.1.2",
     "npm-pkgbuild": "^20.7.7",
-    "playwright": "^1.61.0",
+    "playwright": "^1.61.1",
     "semantic-release": "^25.0.5",
     "stylelint": "^17.13.0",
     "stylelint-config-standard": "^40.0.0",
-    "svelte": "^5.56.3",
-    "vite": "^8.0.16"
+    "svelte": "^5.56.4",
+    "vite": "^8.1.0"
   },
   "optionalDependencies": {
     "mf-hosting-frontend": "^4.0.6"
