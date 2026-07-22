@@ -32,7 +32,7 @@
   "dependencies": {
     "WiredPanels": "^2.0.0",
     "browser-stream-tar": "^3.0.4",
-    "mf-styling": "^3.3.25",
+    "mf-styling": "^3.3.27",
     "svelte-common": "^6.19.80",
     "svelte-guard-history-router": "^7.0.25",
     "svelte-session-manager": "^3.0.89",
@@ -45,7 +45,7 @@
     "@semantic-release/github": "^12.0.9",
     "@semantic-release/release-notes-generator": "^14.1.1",
     "@sveltejs/vite-plugin-svelte": "^7.2.0",
-    "npm-pkgbuild": "^20.8.5",
+    "npm-pkgbuild": "^20.8.6",
     "playwright": "^1.61.1",
     "semantic-release": "^25.0.8",
     "stylelint": "^17.14.1",
