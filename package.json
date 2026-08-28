@@ -54,7 +54,7 @@
     "vite": "^8.2.2"
   },
   "optionalDependencies": {
-    "mf-hosting-frontend": "^4.0.9"
+    "mf-hosting-frontend": "^4.1.0"
   },
   "repository": {
     "type": "git",
